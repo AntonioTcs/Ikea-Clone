@@ -1,2 +1,2 @@
 # Ikea-Clone
-Ikea Project, Devlhope Gruppo 4
+Ikea Project, Develhope Gruppo 4
