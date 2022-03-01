@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#promo {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#promo a {
+  margin-left: 10px;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+}
+
+#promo a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-link ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-link ul li button {
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 190px;
+}
+
+.header-link ul li a span {
+  margin: 0.5rem;
+}
+
+.header-hamburger {
+  position: fixed;
+  margin-left: 5rem;
+  margin-top: 20px;
+}
+
+.header-logo {
+  justify-self: flex-start;
+}
+
+.header-search-bar form input {
+  height: 30px;
+  border: none;
+  min-width: 300px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #e7e6e6;
+  justify-self: flex-start;
+}
+
+#logo-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#logo-container .header-search-bar {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.header-link-container {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.header-link-container ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+.header-link-container ul li a {
+  font-weight: 800;
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.header-link-container ul li a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
