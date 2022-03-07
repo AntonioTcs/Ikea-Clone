@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobili e Accessori per l'Arredamento della Casa - IKEA IT</title>
 
+    <link rel="stylesheet" href="styles/common-element.css" />
     <link
       rel="shortcut icon"
       href="https://www.ikea.com/it/it/static/favicon.838d8a3778e4d716eb72.ico"
@@ -22,9 +23,192 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <nav style="height: 250px; width: 100%; text-align: center">
-      <h1>PlaceHolder</h1>
-    </nav>
+    <header>
+      <div id="promo">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="white"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1 4h15v3h3.0246l3.9793 5.6848V18h-2.6567c-.4218 1.3056-1.6473 2.25-3.0933 2.25-1.446 0-2.6715-.9444-3.0932-2.25h-3.9044c-.4217 1.3056-1.6472 2.25-3.0932 2.25S4.4916 19.3056 4.0698 18H1V4zm3.0698 12c.4218-1.3056 1.6473-2.25 3.0933-2.25 1.446 0 2.6715.9444 3.0932 2.25H14V6H3v10h1.0698zM16 14.0007a3.24 3.24 0 0 1 1.2539-.2507c1.446 0 2.6715.9444 3.0933 2.25h.6567v-2.6848L17.9833 9H16v5.0007zM7.163 15.75c-.6903 0-1.25.5596-1.25 1.25s.5597 1.25 1.25 1.25c.6904 0 1.25-.5596 1.25-1.25s-.5596-1.25-1.25-1.25zm10.0909 0c-.6904 0-1.25.5596-1.25 1.25s.5596 1.25 1.25 1.25 1.25-.5596 1.25-1.25-.5596-1.25-1.25-1.25z"
+          ></path>
+        </svg>
+
+        <a href="#">
+          Promo: Ricevi i tuoi ordini fino a 30kg a casa o in un Ufficio Postale
+          fino al 6 marzo 2022</a
+        >
+      </div>
+      <aside>
+        <div class="header-hamburger">
+          <svg
+            focusable="false"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="black"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20 8H4V6h16v2zm0 5H4v-2h16v2zm0 5H4v-2h16v2z"
+            ></path>
+          </svg>
+        </div>
+      </aside>
+
+      <nav>
+        <div class="header-container">
+          <div class="header">
+            <div id="logo-container">
+              <div class="header-logo">
+                <img
+                  src="https://www.ikea.com/it/it/static/ikea-logo.f7d9229f806b59ec64cb.svg"
+                  alt="img-logo-ikea"
+                  type="image/svg"
+                />
+              </div>
+              <div class="header-search-bar">
+                <form action="">
+                  <input type="text" placeholder="Cosa stai cercando?" />
+                </form>
+              </div>
+            </div>
+
+            <div class="header-link">
+              <ul>
+                <li>
+                  <button>
+                    <svg
+                      focusable="false"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="black"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1 4h15v3h3.0246l3.9793 5.6848V18h-2.6567c-.4218 1.3056-1.6473 2.25-3.0933 2.25-1.446 0-2.6715-.9444-3.0932-2.25h-3.9044c-.4217 1.3056-1.6472 2.25-3.0932 2.25S4.4916 19.3056 4.0698 18H1V4zm3.0698 12c.4218-1.3056 1.6473-2.25 3.0933-2.25 1.446 0 2.6715.9444 3.0932 2.25H14V6H3v10h1.0698zM16 14.0007a3.24 3.24 0 0 1 1.2539-.2507c1.446 0 2.6715.9444 3.0933 2.25h.6567v-2.6848L17.9833 9H16v5.0007zM7.163 15.75c-.6903 0-1.25.5596-1.25 1.25s.5597 1.25 1.25 1.25c.6904 0 1.25-.5596 1.25-1.25s-.5596-1.25-1.25-1.25zm10.0909 0c-.6904 0-1.25.5596-1.25 1.25s.5596 1.25 1.25 1.25 1.25-.5596 1.25-1.25-.5596-1.25-1.25-1.25z"
+                      ></path>
+                    </svg>
+                    <div class="text-information">
+                      <small>Per informazioni sulla consegna</small>
+                      <strong>Inserisci il codice postale</strong>
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <svg
+                      focusable="false"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="black"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22 20V4H2v16h20zM20 6H4v12h3v-8h10v8h3V6zm-9 6H9v6h2v-6zm2 6h2v-6h-2v6z"
+                      ></path>
+                    </svg>
+                    <div class="text-information">
+                      <small>Consulta gli orari e altro</small>
+                      <strong>Seleziona il negozio</strong>
+                    </div>
+                  </button>
+                </li>
+                <li class="header-profile-link">
+                  <a
+                    href="https://www.ikea.com/it/it/profile/login/"
+                    aria-label="Il mio profilo"
+                    rel="nofollow"
+                    data-tracking-label="profile"
+                    data-profile-link=""
+                  >
+                    <span>
+                      <svg
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="black"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.6724 6.4678c.2734-.2812.6804-.4707 1.3493-.4707.3971 0 .705.0838.9529.2225.241.1348.4379.3311.5934.6193l.0033.006c.1394.2541.237.6185.237 1.1403 0 .7856-.2046 1.2451-.4796 1.5278l-.0048.005c-.2759.2876-.679.4764-1.334.4764-.3857 0-.6962-.082-.956-.2241-.2388-.1344-.4342-.3293-.5888-.6147-.1454-.275-.2419-.652-.2419-1.1704 0-.7902.2035-1.2442.4692-1.5174zm1.3493-2.4717c-1.0834 0-2.054.3262-2.7838 1.0766-.7376.7583-1.0358 1.781-1.0358 2.9125 0 .7656.1431 1.483.4773 2.112l.0031.0058c.3249.602.785 1.084 1.3777 1.4154l.0062.0035c.5874.323 1.2368.4736 1.9235.4736 1.0818 0 2.0484-.3333 2.7755-1.0896.7406-.7627 1.044-1.786 1.044-2.9207 0-.7629-.1421-1.4784-.482-2.0996-.3247-.6006-.7844-1.0815-1.376-1.4125-.5858-.3276-1.2388-.477-1.9297-.477zM6.4691 16.8582c.2983-.5803.7228-1.0273 1.29-1.3572.5582-.3191 1.2834-.5049 2.2209-.5049h4.04c.9375 0 1.6626.1858 2.2209.5049.5672.3299.9917.7769 1.29 1.3572.3031.5896.4691 1.2936.4691 2.1379v1h2v-1c0-1.1122-.2205-2.1384-.6904-3.0523a5.3218 5.3218 0 0 0-2.0722-2.1769c-.9279-.5315-2.0157-.7708-3.2174-.7708H9.98c-1.1145 0-2.2483.212-3.2225.7737-.8982.5215-1.5928 1.2515-2.0671 2.174C4.2205 16.8577 4 17.8839 4 18.9961v1h2v-1c0-.8443.166-1.5483.4691-2.1379z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="header-wish-list">
+                  <a
+                    href="https://www.ikea.com/it/it/favourites/"
+                    aria-label="Lista dei desideri"
+                    rel="nofollow"
+                    data-tracking-label="shopping-list"
+                  >
+                    <span>
+                      <svg
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="black"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.336 5.52055C14.2336 3.62376 17.3096 3.62401 19.2069 5.52129C20.2067 6.52115 20.6796 7.85005 20.6259 9.15761C20.6151 12.2138 18.4184 14.8654 16.4892 16.6366C15.4926 17.5517 14.5004 18.2923 13.7593 18.8036C13.3879 19.0598 13.0771 19.2601 12.8574 19.3973C12.7475 19.466 12.6601 19.519 12.5992 19.5555C12.5687 19.5737 12.5448 19.5879 12.5279 19.5978L12.5079 19.6094L12.502 19.6129L12.5001 19.614C12.5001 19.614 12.4989 19.6147 11.9999 18.748C11.501 19.6147 11.5005 19.6144 11.5005 19.6144L11.4979 19.6129L11.4919 19.6094L11.472 19.5978C11.4551 19.5879 11.4312 19.5737 11.4007 19.5555C11.3397 19.519 11.2524 19.466 11.1425 19.3973C10.9227 19.2601 10.612 19.0598 10.2405 18.8036C9.49947 18.2923 8.50726 17.5517 7.51063 16.6366C5.58146 14.8654 3.38477 12.2139 3.37399 9.15765C3.32024 7.85008 3.79314 6.52117 4.79301 5.52129C6.69054 3.62376 9.76704 3.62376 11.6646 5.52129L11.9993 5.856L12.3353 5.52129L12.336 5.52055ZM11.9999 18.748L11.5005 19.6144L11.9999 19.9019L12.4989 19.6147L11.9999 18.748ZM11.9999 17.573C12.1727 17.462 12.384 17.3226 12.6236 17.1573C13.3125 16.6821 14.2267 15.9988 15.1366 15.1634C17.0157 13.4381 18.6259 11.2919 18.6259 9.13506V9.11213L18.627 9.08922C18.6626 8.31221 18.3844 7.52727 17.7926 6.9355C16.6762 5.81903 14.866 5.81902 13.7495 6.9355L13.7481 6.93689L11.9965 8.68166L10.2504 6.9355C9.13387 5.81903 7.3237 5.81903 6.20722 6.9355C5.61546 7.52727 5.33724 8.31221 5.3729 9.08922L5.37395 9.11213V9.13507C5.37395 11.2919 6.98418 13.4381 8.86325 15.1634C9.77312 15.9988 10.6874 16.6821 11.3762 17.1573C11.6159 17.3226 11.8271 17.462 11.9999 17.573Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="header-cart">
+                  <a
+                    href="https://www.ikea.com/it/it/shoppingcart/"
+                    aria-label="Carrello"
+                    rel="nofollow"
+                    data-tracking-label="shopping-bag"
+                  >
+                    <span>
+                      <svg
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="black"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M10.9994 4h-.5621l-.2922.4802-3.357 5.517h-5.069l.3107 1.2425 1.6212 6.4851c.334 1.3355 1.5339 2.2724 2.9105 2.2724h10.8769c1.3766 0 2.5765-.9369 2.9104-2.2724l1.6213-6.4851.3106-1.2425h-5.0695l-3.3574-5.517L13.5618 4h-2.5624zm3.8707 5.9972L12.4376 6h-.8761L9.1292 9.9972h5.7409zm-9.2787 7.2425-1.3106-5.2425h15.4384l-1.3106 5.2425a1 1 0 0 1-.9701.7575H6.5615a1 1 0 0 1-.97-.7575z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <article id="delivery-offer">
