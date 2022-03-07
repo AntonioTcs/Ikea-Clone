@@ -138,7 +138,6 @@ section {
 }
 
 #organized-life #sec-img-container {
-  height: 50px rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -241,7 +240,6 @@ section {
 }
 
 #now-ikea {
-  overflow: scroll;
   /*  .svg-container{ Don't work 
         margin-bottom: -150px;
         width: 36px;
@@ -260,7 +258,15 @@ section {
   display: flex;
 }
 
+#now-ikea #container-sec2 a {
+  text-decoration: none;
+  color: black;
+}
+
 #now-ikea #container-sec2 .now-container {
+  min-width: 350px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,32 +276,16 @@ section {
           flex-direction: column;
   margin-right: 50px;
   position: relative;
+  margin-bottom: 120px;
 }
 
 #now-ikea #container-sec2 .now-container img {
+  max-width: 100%;
   margin-bottom: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 60%;
-}
-
-#now-ikea #container-sec2 .now-container .arrow-btn-sec2 {
-  background-color: black;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 400px;
 }
 
 #now-ikea #container-sec2 .now-container svg {
@@ -314,6 +304,7 @@ section {
   font-size: 16px;
   font-weight: lighter;
   color: #111111;
+  margin-bottom: 100px;
 }
 
 #now-ikea #container-sec2 .decoration {
@@ -332,22 +323,44 @@ section {
   background-color: #c1b1b6;
 }
 
-#now-ikea::-webkit-scrollbar {
-  width: 5px;
+.arrow-btn-sec2 {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
+.overflow-container::-webkit-scrollbar,
+#now-ikea::-webkit-scrollbar {
+  height: 8px;
+}
+
+.overflow-container::-webkit-scrollbar-thumb,
 #now-ikea::-webkit-scrollbar-thumb {
   background-color: black;
   border-radius: 25px;
+  width: 20%;
 }
 
+.overflow-container::-webkit-scrollbar-track,
 #now-ikea::-webkit-scrollbar-track {
   background: #b3b1b1;
   border-radius: 10px;
 }
 
-.sec-3-4 {
-  overflow: scroll;
+.overflow-container {
+  overflow-x: auto;
 }
 
 .sec-3-4 .container-scroll-little {
@@ -459,7 +472,7 @@ section {
   padding-left: 20px;
 }
 
-.sec-3-4 #product-availability button {
+.btn-black {
   width: 180px;
   height: 40px;
   background-color: black;
@@ -477,5 +490,309 @@ section {
   border-radius: 40px;
   font-weight: bold;
   font-size: 12px;
+  cursor: pointer;
+}
+
+/*section 5*/
+#suggested-for-you #suggested-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150%;
+}
+
+#suggested-for-you #suggested-img-container a {
+  text-decoration: none;
+  color: black;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element {
+  min-width: 280px;
+  height: 100%;
+  position: relative;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element .suggested-img {
+  width: 100%;
+  height: 100%;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element h1 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element p {
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element .most-sell {
+  position: absolute;
+  padding: 2px;
+  background-color: #e40101;
+  color: white;
+  font-weight: bold;
+  top: 30px;
+  left: 0;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element .most-sell h1 {
+  margin-top: 0;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element .like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  height: 30px;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element .like svg {
+  width: 26px;
+  height: 26px;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element div:nth-child(2) {
+  background-size: cover;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element #kallax1 {
+  background-image: url(https://www.ikea.com/it/it/images/products/kallax-scaffale-bianco__1051342_pe845158_s5.jpg?f=m);
+}
+
+#suggested-for-you #suggested-img-container .suggested-element #friheten {
+  background-image: url(https://www.ikea.com/it/it/images/products/friheten-divano-letto-angolare-contenitore-skiftebo-grigio-scuro__0833845_pe603738_s5.jpg?f=m);
+}
+
+#suggested-for-you #suggested-img-container .suggested-element #kleppstad {
+  background-image: url(https://www.ikea.com/it/it/images/products/kleppstad-guardaroba-con-3-ante-bianco__0753597_pe748785_s5.jpg?f=m);
+}
+
+#suggested-for-you #suggested-img-container .suggested-element #tradfri {
+  background-image: url(https://www.ikea.com/it/it/images/products/tradfri-pulsante-scorciatoia-bianco__0807046_pe770217_s5.jpg?f=m);
+}
+
+#suggested-for-you #suggested-img-container .suggested-element #kallax2 {
+  background-image: url(https://www.ikea.com/it/it/images/products/kallax-scaffale-bianco__1084741_pe859827_s5.jpg?f=m);
+}
+
+#suggested-for-you #suggested-img-container .suggested-element #pax {
+  background-image: url(https://www.ikea.com/it/it/images/products/pax-guardaroba-bianco-hasvik-bianco__0856023_pe554738_s5.jpg?f=m);
+}
+
+#suggested-for-you #suggested-img-container .suggested-element #malm {
+  background-image: url(https://www.ikea.com/it/it/images/products/malm-struttura-letto-alta-2-contenitori-bianco-loenset__0861262_pe662046_s5.jpg?f=m);
+}
+
+#suggested-for-you #suggested-img-container .suggested-element .add-to-cart {
+  visibility: collapse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  background-color: #0058a3;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element:hover .add-to-cart {
+  visibility: visible;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element:hover .suggested-img {
+  visibility: collapse;
+}
+
+#suggested-for-you #suggested-img-container .suggested-element:hover .like {
+  visibility: visible;
+}
+
+#suggested-for-you #suggested-img-container .suggested-img {
+  width: 100%;
+  height: 100%;
+}
+
+/*section 6*/
+#ideas a {
+  text-decoration: none;
+  color: black;
+}
+
+#ideas #btn-ambiente {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+#ideas #btn-ambiente button {
+  cursor: pointer;
+  margin-right: 20px;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  height: 50px;
+  min-width: 120px;
+  font-weight: bold;
+  border: none;
+}
+
+#ideas #img-ideas-container {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ideas #img-ideas-container img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#ideas #img-ideas-container #left-clm {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  margin-right: 10px;
+}
+
+#ideas #img-ideas-container #center-clm {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  margin-right: 10px;
+  margin-top: -100px;
+  z-index: 0;
+}
+
+#ideas #img-ideas-container #right-clm {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+#ideas #btn-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#important-information #container-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#important-information #container-general .information-container {
+  width: 100%;
+  position: relative;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f5;
+  margin-right: 15px;
+}
+
+#important-information #container-general .information-container a {
+  text-decoration: none;
+  color: black;
+}
+
+#important-information #container-general .information-container img {
+  min-width: 463px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#important-information #container-general .information-container h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 150px;
+}
+
+#important-information #container-general .information-container h1,
+#important-information #container-general .information-container h2,
+#important-information #container-general .information-container a:last-child {
+  margin-left: 20px;
+}
+
+a:hover h1 {
+  text-decoration: underline;
+}
+
+#disclaimer-end {
+  width: 50%;
+  color: #525252;
+}
+
+hr {
+  color: gray;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=style.css.map */
