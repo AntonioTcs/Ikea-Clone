@@ -1,9 +1,13 @@
+body {
+  width: 100%;
+}
 $sec-margin: 10rem;
+$sec-margin-right: 4rem;
 
 main {
   margin-top: 5rem;
   margin-left: $sec-margin;
-  margin-right: $sec-margin;
+  margin-right: $sec-margin-right;
 }
 
 #delivery-offer {
@@ -197,7 +201,7 @@ section {
     }
 
     .now-container {
-      min-width: 350px;
+      min-width: 300px;
       flex-basis: 30%;
       display: flex;
       flex-direction: column;
@@ -518,8 +522,10 @@ section {
     color: black;
   }
   #btn-ambiente {
+    overflow: hidden;
     z-index: 1;
     display: flex;
+    flex-wrap: nowrap;
     margin: 10px;
     button {
       cursor: pointer;
@@ -575,41 +581,45 @@ section {
 }
 
 #important-information {
-  #container-general {
-    display: flex;
-
-    .information-container {
-      width: 100%;
-      position: relative;
-      flex-basis: 33%;
+  .overflow-container {
+    #container-general {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #f5f5f5;
-      margin-right: 15px;
+      justify-content: space-between;
+      .information-container {
+        min-width: 300px;
+        position: relative;
+        flex-basis: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #f5f5f5;
+        margin-right: 15px;
 
-      a {
-        text-decoration: none;
-        color: black;
-      }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        .img-container-info {
+          flex-basis: 480px;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
 
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
+        h2 {
+          margin-top: 0;
+          font-size: 18px;
+          font-weight: lighter;
+          margin-bottom: 150px;
+        }
 
-      h2 {
-        margin-top: 0;
-        font-size: 18px;
-        font-weight: lighter;
-        margin-bottom: 150px;
-      }
-
-      h1,
-      h2,
-      a:last-child {
-        margin-left: 20px;
+        h1,
+        h2,
+        a:last-child {
+          margin-left: 20px;
+        }
       }
     }
   }
@@ -634,4 +644,155 @@ hr {
 
 * {
   font-family: "Noto IKEA";
+}
+
+@media screen and (max-width: 1450px) {
+  .header {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #logo-container {
+    width: 80%;
+  }
+  .header-profile-link {
+    position: absolute;
+    top: 10px;
+    right: 90px;
+  }
+
+  .header-wish-list {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+  }
+
+  .header-cart {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #logo-container {
+    * {
+      margin: 2px;
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .header-logo {
+      align-self: flex-start;
+    }
+
+    .header-search-bar {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .header-link {
+    ul {
+      flex-wrap: wrap;
+    }
+  }
+
+  .footer-container {
+    padding: initial;
+
+    .footer-links {
+      .footer-links-left {
+        padding-right: 0 !important;
+      }
+
+      .footer-link-right {
+        .main-ul {
+          flex-wrap: wrap;
+          justify-content: space-between !important;
+        }
+      }
+    }
+    .footer-utilities {
+      flex-wrap: wrap;
+
+      .icon-bar {
+        .icon-bar-social {
+          ul {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+          }
+        }
+        .icon-bar-payment {
+          flex-wrap: wrap;
+
+          ul {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+
+    .footer-pie {
+      flex-wrap: wrap;
+      .footer-pie-link {
+        flex-wrap: wrap;
+        ul {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #delivery-offer {
+    flex-direction: column;
+
+    picture {
+      width: 100%;
+    }
+
+    #delivery-description {
+      margin-top: -6px;
+      width: auto;
+    }
+  }
+
+  #disclaimer-end {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  footer,
+  nav,
+  main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+
+    .footer-links-left {
+      flex-basis: 100% !important;
+
+      .footer-links-left-item {
+        * {
+          margin: 2px;
+        }
+      }
+    }
+
+    .footer-link-right {
+      flex-basis: 100% !important;
+      flex-wrap: wrap;
+    }
+  }
+  .header-hamburger {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
 }
