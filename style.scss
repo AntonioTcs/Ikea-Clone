@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 $element-margin: 10rem;
@@ -110,3 +111,181 @@ nav{
 
     border-bottom: 1px solid #dfdfdf;
 }
+
+    //CSS-FOOTER
+
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem;
+        .footer {
+            .footer-main {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+                .footer-links {
+                    display: flex;
+                    gap: 2rem;
+                    .footer-links-left {
+                        display: flex;
+                        flex-direction: column;
+                        flex-basis: 25%;
+                        gap: 2rem;
+                        padding-right: 5rem;
+                        .footer-links-left-item{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            p {
+                                a {
+                                    color: rgb(58, 58, 58);
+                                    &:hover {
+                                        color: black;
+                                    }
+                                }
+                            }
+                            .button {
+                                color: white;
+                                background-color: black;
+                                padding: 1rem;
+                                width: 9rem;
+                                border-radius: 2rem;
+                                text-decoration: none;
+                                &:hover {
+                                    background-color: rgba(19, 19, 19, 0.8);
+                                }
+                            }
+                        }
+                    }
+                    .footer-link-right {
+                        flex-basis: 75%;
+                        .main-ul {
+                            display: flex;
+                            list-style-type: none;
+                            justify-content: space-evenly;
+                            gap: 1rem;
+                            .main-li {
+                                list-style: none;
+                                flex-basis: 25%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2rem;
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1.5rem;
+                                    list-style-type: none;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    color: rgb(19, 19, 19);
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }    
+                }
+                .footer-utilities {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .icon-bar {
+                        display: flex;
+                        gap: 1.5rem;
+                        align-items: center;
+                        .icon-bar-social {
+                            ul {
+                                display: flex;
+                                gap: 1.5rem;
+                                list-style-type: none;
+                                align-items: center;
+                                svg {
+                                    border: 1px solid rgb(202, 202, 202);
+                                    border-radius: 50%;
+                                    padding: 0.3rem;
+                                    box-sizing: content-box;
+                                    &:hover {
+                                        border-color: rgb(19, 19, 19);
+                                    }
+                                }
+                            }
+                        }
+                        .icon-bar-payment {
+                            ul {
+                                display: flex;
+                                gap: 1.5rem;
+                                list-style-type: none;
+                                align-items: center;
+                                img {
+                                    border: 1px solid rgb(202, 202, 202);
+                                    border-radius: 10%;
+                                    padding: 0.3rem;
+                                    height: 2.3rem;
+                                }
+                            }
+                        }
+                    }
+                    .change-langueges-container {
+                        .change-langueges {
+                            a {
+                                display: flex;
+                                align-items: center;
+                                text-decoration: none;
+                                color: rgb(19, 19, 19);
+                                gap: 0.5rem;
+                                border: 1px solid rgb(202, 202, 202);
+                                border-radius: 1rem;
+                                padding: 0.3rem;
+                                width: 9rem;
+                                &:hover {
+                                    border-color: rgb(19, 19, 19);
+                                }
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+        .footer-pie {
+            display: flex;
+            justify-content: space-between;
+            .footer-pie-link {
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                    gap: 1rem;
+                    li {
+                        a {
+                            color: rgb(19, 19, 19);
+                            text-decoration: none;
+                            font-size: 0.9rem;
+                            &:hover {
+                                text-decoration: underline;
+                                color: rgb(58, 58, 58);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+    
+        .footer-container {
+            .footer {
+                .footer-main {
+                    .footer-utilities {
+                        .icon-bar {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
