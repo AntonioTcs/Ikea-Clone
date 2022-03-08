@@ -1,10 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    // box-sizing: border-box;
 }
 
 $element-margin: 10rem;
+$element-margin-right: 2rem;
 
 #promo{
     background-color: black;
@@ -116,6 +117,9 @@ nav{
 
 
     .footer-container {
+        // box-sizing: border-box;
+        margin-left: $element-margin;
+        margin-right: $element-margin-right;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -150,7 +154,7 @@ nav{
                                 color: white;
                                 background-color: black;
                                 padding: 1rem;
-                                width: 9rem;
+                                width: 7rem;
                                 border-radius: 2rem;
                                 text-decoration: none;
                                 &:hover {
@@ -177,6 +181,7 @@ nav{
                                     flex-direction: column;
                                     gap: 1.5rem;
                                     list-style-type: none;
+                                    padding: 0;
                                 }
                                 a {
                                     text-decoration: none;
@@ -203,6 +208,7 @@ nav{
                                 gap: 1.5rem;
                                 list-style-type: none;
                                 align-items: center;
+                                padding: 0;
                                 svg {
                                     border: 1px solid rgb(202, 202, 202);
                                     border-radius: 50%;
@@ -220,11 +226,12 @@ nav{
                                 gap: 1.5rem;
                                 list-style-type: none;
                                 align-items: center;
+                                padding: 0;
                                 img {
                                     border: 1px solid rgb(202, 202, 202);
                                     border-radius: 10%;
                                     padding: 0.3rem;
-                                    height: 2.3rem;
+                                    height: 1.3rem;
                                 }
                             }
                         }
