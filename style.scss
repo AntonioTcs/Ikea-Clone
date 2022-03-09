@@ -109,6 +109,26 @@ ul {
   padding-left: 0;
 }
 
+body #button-arrow-up {
+  width: 35px;
+  height: 35px;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  left: 5rem;
+  border-radius: 50%;
+  border: none;
+}
+
 #promo {
   background-color: black;
   display: flex;
@@ -222,8 +242,9 @@ nav {
   border-bottom: 1px solid #dfdfdf;
 }
 footer {
-  margin-left: $element-margin;
-  margin-right: $element-margin-right;
+  background-color: #f5f5f5;
+  padding-left: $element-margin;
+  padding-right: $element-margin-right;
 }
 
 .footer-container {
