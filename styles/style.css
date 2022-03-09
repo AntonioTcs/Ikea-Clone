@@ -817,107 +817,6 @@ hr {
   font-family: "Noto IKEA";
 }
 
-@media screen and (max-width: 1450px) {
-  .header {
-    position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #logo-container {
-    width: 80%;
-  }
-  .header-profile-link {
-    position: absolute;
-    top: 10px;
-    right: 90px;
-  }
-  .header-wish-list {
-    position: absolute;
-    top: 10px;
-    right: 60px;
-  }
-  .header-cart {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  #logo-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #logo-container * {
-    margin: 2px;
-  }
-  #logo-container .header-logo {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  #logo-container .header-search-bar {
-    margin-left: 0;
-    width: 100%;
-  }
-  .header-link ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-container {
-    padding: initial;
-  }
-  .footer-container .footer-links .footer-links-left {
-    padding-right: 0 !important;
-  }
-  .footer-container .footer-links .footer-link-right .main-ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-  }
-  .footer-container .footer-utilities {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-container .footer-utilities .icon-bar .icon-bar-social ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-  .footer-container .footer-utilities .icon-bar .icon-bar-payment {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-container .footer-utilities .icon-bar .icon-bar-payment ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-container .footer-pie {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-container .footer-pie .footer-pie-link {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-container .footer-pie .footer-pie-link ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 @media screen and (max-width: 1300px) {
   #delivery-offer {
     -webkit-box-orient: vertical;
@@ -938,33 +837,9 @@ hr {
 }
 
 @media screen and (max-width: 1150px) {
-  footer,
-  nav,
   main {
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-  .footer-links {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer-links .footer-links-left {
-    -ms-flex-preferred-size: 100% !important;
-        flex-basis: 100% !important;
-  }
-  .footer-links .footer-links-left .footer-links-left-item * {
-    margin: 2px;
-  }
-  .footer-links .footer-link-right {
-    -ms-flex-preferred-size: 100% !important;
-        flex-basis: 100% !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .header-hamburger {
-    position: absolute;
-    top: 10px;
-    right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

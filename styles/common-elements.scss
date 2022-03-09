@@ -446,6 +446,9 @@ footer {
 
 @media screen and (max-width: 850px) {
   #logo-container {
+    * {
+      margin: 2px;
+    }
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -459,21 +462,89 @@ footer {
     }
   }
 
-  .header-profile-link {
-    position: absolute;
-    top: 10px;
-    right: 60px;
+  .header-link {
+    ul {
+      flex-wrap: wrap;
+    }
   }
 
-  .header-wish-list {
-    position: absolute;
-    top: 10px;
-    right: 30px;
+  .footer-container {
+    padding: initial;
+
+    .footer-links {
+      .footer-links-left {
+        padding-right: 0 !important;
+      }
+
+      .footer-link-right {
+        .main-ul {
+          flex-wrap: wrap;
+          justify-content: space-between !important;
+        }
+      }
+    }
+    .footer-utilities {
+      flex-wrap: wrap;
+
+      .icon-bar {
+        .icon-bar-social {
+          ul {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+          }
+        }
+        .icon-bar-payment {
+          flex-wrap: wrap;
+
+          ul {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+
+    .footer-pie {
+      flex-wrap: wrap;
+      .footer-pie-link {
+        flex-wrap: wrap;
+        ul {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  footer,
+  nav,
+  main,
+  .footer-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-  .header-cart {
+  .footer-links {
+    flex-wrap: wrap;
+
+    .footer-links-left {
+      flex-basis: 100% !important;
+
+      .footer-links-left-item {
+        * {
+          margin: 2px;
+        }
+      }
+    }
+
+    .footer-link-right {
+      flex-basis: 100% !important;
+      flex-wrap: wrap;
+    }
+  }
+  .header-hamburger {
     position: absolute;
     top: 10px;
-    right: 0px;
+    right: 5px;
   }
 }
