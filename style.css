@@ -1,6 +1,89 @@
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-400i.latin-ext.7ed5b4fc.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-400i.latin.a15d672b.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-700i.latin-ext.c6db488c.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-700i.latin.f77e6ad9.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-400.latin-ext.14a7297a.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-400.latin.16880ce8.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-700.latin-ext.3934340f.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Noto IKEA";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.ikea.com/global/assets/fonts/woff2/noto-ikea-700.latin.5d09a799.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  padding-left: 0;
 }
 
 #promo {
@@ -30,13 +113,15 @@ body {
 
 nav {
   margin-left: 10rem;
-  margin-right: 10rem;
+  margin-right: 2rem;
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -46,6 +131,7 @@ nav {
 }
 
 .header-link ul {
+  padding-left: 0;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,7 +144,7 @@ nav {
           align-items: center;
 }
 
-.header-link ul li button {
+.header-link ul li .btn-link {
   background-color: transparent;
   border: none;
   display: -webkit-box;
@@ -67,7 +153,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 190px;
+  width: 250px;
+}
+
+.header-link ul li .text-information {
+  margin-left: 8px;
 }
 
 .header-link ul li a span {
@@ -76,8 +166,8 @@ nav {
 
 .header-hamburger {
   position: fixed;
-  margin-left: 5rem;
-  margin-top: 20px;
+  margin-left: -5rem;
+  margin-top: 0px;
 }
 
 .header-logo {
@@ -133,9 +223,12 @@ nav {
   text-decoration: underline;
 }
 
-.footer-container {
+footer {
   margin-left: 10rem;
   margin-right: 2rem;
+}
+
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,6 +238,10 @@ nav {
           flex-direction: column;
   gap: 3rem;
   padding: 2rem;
+}
+
+.footer-container .footer h3 {
+  font-size: 16px;
 }
 
 .footer-container .footer .footer-main {
@@ -173,8 +270,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   gap: 2rem;
   padding-right: 5rem;
 }
@@ -190,6 +287,10 @@ nav {
   gap: 1rem;
 }
 
+.footer-container .footer .footer-main .footer-links .footer-links-left .footer-links-left-item p {
+  font-size: 14px;
+}
+
 .footer-container .footer .footer-main .footer-links .footer-links-left .footer-links-left-item p a {
   color: #3a3a3a;
 }
@@ -199,10 +300,21 @@ nav {
 }
 
 .footer-container .footer .footer-main .footer-links .footer-links-left .footer-links-left-item .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
   color: white;
   background-color: black;
   padding: 1rem;
-  width: 7rem;
+  width: 9rem;
+  height: 0.8rem;
   border-radius: 2rem;
   text-decoration: none;
 }
@@ -212,11 +324,12 @@ nav {
 }
 
 .footer-container .footer .footer-main .footer-links .footer-link-right {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
 }
 
 .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul {
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,6 +368,7 @@ nav {
 }
 
 .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li a {
+  font-size: 14px;
   text-decoration: none;
   color: #131313;
 }
@@ -363,6 +477,7 @@ nav {
   display: flex;
   list-style-type: none;
   gap: 1rem;
+  font-size: 14px;
 }
 
 .footer-container .footer-pie .footer-pie-link ul li a {
@@ -386,5 +501,142 @@ nav {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+
+@media screen and (max-width: 1450px) {
+  .header {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #logo-container {
+    width: 80%;
+  }
+  .header-profile-link {
+    position: absolute;
+    top: 10px;
+    right: 90px;
+  }
+  .header-wish-list {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+  }
+  .header-cart {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #logo-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #logo-container * {
+    margin: 2px;
+  }
+  #logo-container .header-logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #logo-container .header-search-bar {
+    margin-left: 0;
+    width: 100%;
+  }
+  .header-link ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-container {
+    padding: initial;
+  }
+  .footer-container .footer-links .footer-links-left {
+    padding-right: 0 !important;
+  }
+  .footer-container .footer-links .footer-link-right .main-ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .footer-container .footer-utilities {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-container .footer-utilities .icon-bar .icon-bar-social ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .footer-container .footer-utilities .icon-bar .icon-bar-payment {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-container .footer-utilities .icon-bar .icon-bar-payment ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-container .footer-pie {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-container .footer-pie .footer-pie-link {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-container .footer-pie .footer-pie-link ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  footer,
+  nav,
+  main,
+  .footer-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .footer-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-links .footer-links-left {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+  .footer-links .footer-links-left .footer-links-left-item * {
+    margin: 2px;
+  }
+  .footer-links .footer-link-right {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-hamburger {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+  }
+}
+
+* {
+  font-family: "Noto IKEA";
 }
 /*# sourceMappingURL=style.css.map */
