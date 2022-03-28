@@ -86,6 +86,26 @@ ul {
   padding-left: 0;
 }
 
+#button-arrow-up {
+  background-color: black;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2rem;
+}
+
 #promo {
   background-color: black;
   display: -webkit-box;
@@ -605,6 +625,9 @@ footer {
 }
 
 @media screen and (max-width: 1150px) {
+  #button-arrow-up {
+    display: none;
+  }
   footer,
   nav,
   main,

@@ -108,7 +108,19 @@ $element-margin-right: 2rem;
 ul {
   padding-left: 0;
 }
-
+#button-arrow-up {
+  background-color: black;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
 #promo {
   background-color: black;
   display: flex;
@@ -516,6 +528,9 @@ footer {
 }
 
 @media screen and (max-width: 1150px) {
+  #button-arrow-up {
+    display: none;
+  }
   footer,
   nav,
   main,
