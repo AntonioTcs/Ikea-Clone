@@ -8,11 +8,11 @@ body {
 
 @font-face {
   font-family: "Nodo";
-  src: url(assets/Noto.ttf);
+  src: url(../assets/Noto.ttf);
 }
 
 .first-box article button, button {
-  width: 18,75rem;
+  width: 18, 75rem;
   height: 4em;
   background-color: white;
   border-radius: 4em;
@@ -88,7 +88,18 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 190px;
+  width: 250px;
+}
+
+.header-link ul li button .text-information {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header-link ul li a span {
@@ -663,6 +674,10 @@ article {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .footer-container {
+    margin-left: 0;
+    padding-left: 0;
+  }
   .first-box,
   .second-box,
   .third-box,
@@ -700,8 +715,8 @@ article {
   }
   .header-hamburger {
     position: absolute;
-    top: 10px;
-    right: 5px;
+    top: 2.9rem;
+    right: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
