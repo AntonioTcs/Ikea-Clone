@@ -1,6 +1,38 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+main ::-webkit-scrollbar {
+  height: 2.5px;
+}
+
+main ::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+main ::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+}
+
+main ::-webkit-scrollbar:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+  height: 5px;
+}
+
+main ::-webkit-scrollbar-button {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
 }
 
 #promo {
@@ -31,6 +63,13 @@ body {
 nav {
   margin-left: 10rem;
   margin-right: 2rem;
+}
+
+.mobile-hamburger {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: none;
 }
 
 .header {
@@ -174,6 +213,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .lowprice-cnt .cards-cnt img {
@@ -187,7 +229,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 180px;
+  width: 180px;
   margin-right: 20px;
   position: relative;
 }
@@ -262,8 +304,9 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10px;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 330px;
+      flex-basis: 330px;
+  min-width: 280px;
 }
 
 .offers-animated-cnt .offer-card .bg1 {
@@ -428,7 +471,7 @@ nav {
 }
 
 .idee-prezzi-cnt .img-box img {
-  width: 100%;
+  max-width: 100%;
   position: absolute;
   -webkit-transform: translate(50% 50%);
           transform: translate(50% 50%);
@@ -839,6 +882,311 @@ nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .header-hamburger {
+    display: none;
+  }
+  .mobile-hamburger {
+    display: inline;
+  }
+  nav {
+    margin: 0 20px;
+    padding: 0;
+  }
+  .lowprice-cnt {
+    margin: 0;
+    padding: 0;
+  }
+  .ourprice-cnt {
+    margin: 20px 0;
+    padding: 50px;
+  }
+  .offers-animated-cnt {
+    margin: 20px 0;
+    overflow-x: scroll;
+  }
+  .idee-prezzi-cnt {
+    margin: 20px 0;
+    padding: 50px;
+  }
+  .idee-prezzi-cnt .img-box {
+    width: 400px;
+    height: 250px;
+    background-position: bottom;
+  }
+  .circular-hub-cnt {
+    margin: 20px -20px;
+    height: 390px;
+  }
+  .circular-hub-cnt .img-box {
+    width: 700px;
+    overflow: hidden;
+  }
+  .circular-hub-cnt .img-box img {
+    width: 100%;
+    background-size: cover;
+  }
+  .circular-hub-cnt .circular-hub-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2rem;
+  }
+  .circular-hub-cnt .circular-hub-right a {
+    margin-top: 15px;
+    color: #fff;
+  }
+  .circular-hub-cnt .circular-hub-right h3 {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .circular-hub-cnt .circular-hub-right .title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .circular-hub-cnt .circular-hub-right .subtitle {
+    font-size: 14px;
+    line-height: 1.12;
+  }
+  .circular-hub-cnt .circular-hub-right .crc-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    border-radius: 50px;
+    padding: 8px 4px;
+    color: #000;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-transition: 0.33s ease-in;
+    transition: 0.33s ease-in;
+  }
+  .circular-hub-cnt .circular-hub-right .crc-btn:hover {
+    background: #cecece;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .circular-hub-cnt {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .circular-hub-cnt .img-box {
+    width: 1100px;
+    overflow: hidden;
+  }
+  .circular-hub-cnt .img-box img {
+    width: 100%;
+    background-size: cover;
+  }
+  .circular-hub-cnt .circular-hub-right {
+    padding: 50px;
+  }
+  .circular-hub-cnt .circular-hub-right .crc-btn {
+    width: 200px;
+    font-size: 16px;
+  }
+  .footer-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .footer-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-links .footer-links-left {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+  .footer-links .footer-links-left .footer-links-left-item * {
+    margin: 2px;
+  }
+  .footer-links .footer-link-right {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cards-cnt {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: -10px;
+    padding: 0;
+    overflow-x: scroll;
+  }
+  .cards-cnt .card {
+    width: 300px;
+  }
+  .lowprice-cnt {
+    margin: -10px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .ourprice-cnt {
+    margin: 20px -20px;
+    padding: 50px;
+  }
+  .offers-animated-cnt {
+    overflow-x: scroll;
+  }
+  .offers-animated-cnt .offer-card {
+    width: 400px;
+  }
+  .idee-prezzi-cnt {
+    margin: 20px -30px;
+    padding: 20px;
+  }
+  .idee-prezzi-cnt .img-box {
+    width: 300px;
+    height: 200px;
+    background-position: bottom;
+  }
+  .idee-prezzi-cnt .idee-prezzi-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 300px;
+    padding: 0.5rem;
+  }
+  .idee-prezzi-cnt .idee-prezzi-right a {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 10px;
+  }
+  .idee-prezzi-cnt .idee-prezzi-right .title {
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 1.3;
+  }
+  .idee-prezzi-cnt .idee-prezzi-right .subtitle {
+    font-size: 15px;
+    line-height: 1.12;
+  }
+  .idee-prezzi-cnt .idee-prezzi-right .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 23px;
+    height: 23px;
+    background: #000;
+    border-radius: 50%;
+    padding: 8px;
+    color: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.33s ease-in;
+    transition: 0.33s ease-in;
+  }
+  .idee-prezzi-cnt .idee-prezzi-right .btn .arrow-icon {
+    width: 27px;
+    color: #fff;
+  }
+  .idee-prezzi-cnt .idee-prezzi-right .btn:hover {
+    background: #484848;
+  }
+  .circular-hub-cnt {
+    margin: 20px -30px;
+  }
+  .circular-hub-cnt .crc-btn {
+    width: 150px;
+    font-size: 16px;
+  }
+  .footer-links,
+  .main-ul,
+  .icon-bar,
+  .footer-utilities,
+  .footer-pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container {
+    margin: 0;
+  }
+  .icon-bar-payment ul,
+  .footer-pie-link ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /*.footer-pie-link ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}*/
+  .main-li ul {
+    visibility: collapse;
+    height: 0;
+  }
+  input[type="checkbox"]:checked + .show-ul {
+    visibility: visible;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-cnt {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0;
+    overflow-x: scroll;
+  }
+  .cards-cnt .card {
+    width: 300px;
+  }
+  nav {
+    margin: 0 5px;
+    padding: 0;
+  }
+  .product-section {
+    overflow-x: scroll;
+  }
+  .idee-prezzi-cnt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=offers-style.css.map */
