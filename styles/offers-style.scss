@@ -798,11 +798,13 @@ nav {
   }
 }
 @media screen and (max-width: 1400px){
-  .img-box {
-    width: 550px;
-    height: 470px;
-    overflow: hidden;
-    position: relative;
+  .idee-prezzi-cn{
+    .img-box {
+      width: 550px;
+      height: 470px;
+      overflow: hidden;
+      position: relative;
+    }
   }
 }
 
@@ -896,7 +898,7 @@ nav {
       flex-direction: column;
       justify-content: space-between;
       height: 300px;
-      padding: 0.5rem;
+      padding: 30px;
 
       a {
         align-self: flex-start;

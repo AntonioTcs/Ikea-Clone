@@ -980,7 +980,7 @@ nav {
 }
 
 @media screen and (max-width: 1400px) {
-  .img-box {
+  .idee-prezzi-cn .img-box {
     width: 550px;
     height: 470px;
     overflow: hidden;
@@ -1087,7 +1087,7 @@ nav {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 300px;
-    padding: 0.5rem;
+    padding: 30px;
   }
   .idee-prezzi-cnt .idee-prezzi-right a {
     -ms-flex-item-align: start;
