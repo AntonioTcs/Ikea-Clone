@@ -142,6 +142,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 70px;
 }
 
 #logo-container .header-search-bar {
@@ -417,7 +418,7 @@ nav {
 }
 
 .offers-animated-cnt .card-lower .card-lower-left .price {
-  width: 50px;
+  width: 70px;
   background: #fcdc00;
   padding: 5px;
   border-right: 2px solid red;
@@ -699,7 +700,6 @@ nav {
   color: white;
   background-color: black;
   padding: 1rem;
-  width: 7rem;
   border-radius: 2rem;
   text-decoration: none;
 }
@@ -711,6 +711,7 @@ nav {
 .footer-container .footer .footer-main .footer-links .footer-link-right {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%;
+  margin: 10px auto;
 }
 
 .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul {
@@ -898,15 +899,15 @@ nav {
     padding: 0;
   }
   .ourprice-cnt {
-    margin: 20px 0;
+    margin: 20px 20px;
     padding: 50px;
   }
   .offers-animated-cnt {
-    margin: 20px 0;
+    margin: 20px 20px;
     overflow-x: scroll;
   }
   .idee-prezzi-cnt {
-    margin: 20px 0;
+    margin: 20px 20px;
     padding: 50px;
   }
   .idee-prezzi-cnt .img-box {
@@ -915,7 +916,7 @@ nav {
     background-position: bottom;
   }
   .circular-hub-cnt {
-    margin: 20px -20px;
+    margin: 20px 20px;
     height: 390px;
   }
   .circular-hub-cnt .img-box {
@@ -978,7 +979,19 @@ nav {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .img-box {
+    width: 550px;
+    height: 470px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  footer {
+    padding: 10px;
+  }
   .circular-hub-cnt {
     height: auto;
     -webkit-box-orient: vertical;
@@ -988,7 +1001,7 @@ nav {
   }
   .circular-hub-cnt .img-box {
     width: 1100px;
-    overflow: hidden;
+    overflow: scroll;
   }
   .circular-hub-cnt .img-box img {
     width: 100%;
@@ -1002,8 +1015,7 @@ nav {
     font-size: 16px;
   }
   .footer-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 auto;
   }
   .footer-links {
     -ms-flex-wrap: wrap;
