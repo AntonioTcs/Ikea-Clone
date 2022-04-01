@@ -118,6 +118,7 @@ section {
 }
 
 #organized-life .sec-description a {
+  padding: 15px;
   -ms-flex-preferred-size: 250px;
       flex-basis: 250px;
   color: black;
@@ -346,6 +347,12 @@ section {
           align-items: center;
 }
 
+.arrow-btn-sec2:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #464646;
+}
+
 .overflow-container::-webkit-scrollbar,
 #now-ikea::-webkit-scrollbar {
   height: 8px;
@@ -422,6 +429,14 @@ section {
   height: 30px;
 }
 
+.sec-3-4 .container-scroll-little .blue > .arrow-btn-sec-3-4:hover,
+.sec-3-4 .container-scroll-little .red > .arrow-btn-sec-3-4:hover {
+  -webkit-box-shadow: 1px 1px 20px -7px #d8d8d8;
+          box-shadow: 1px 1px 20px -7px #d8d8d8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .sec-3-4 .container-scroll-little .element-scroll {
   width: 250px;
   height: 100%;
@@ -454,6 +469,20 @@ section {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
+}
+
+.sec-3-4 .container-scroll-little .element-scroll button:hover {
+  -webkit-box-shadow: 1px 1px 50px -8px #000000;
+          box-shadow: 1px 1px 50px -8px #000000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.sec-3-4 .container-scroll-little .element-scroll:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 1px 1px 40px -7px #000000;
+          box-shadow: 1px 1px 40px -7px #000000;
 }
 
 .sec-3-4 .container-scroll-little .pub__image {
@@ -666,6 +695,8 @@ section {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #ideas #btn-ambiente button {
@@ -686,6 +717,11 @@ section {
   min-width: 120px;
   font-weight: bold;
   border: none;
+}
+
+#ideas #btn-ambiente button:hover {
+  -webkit-box-shadow: 1px 1px 20px -7px #000000;
+          box-shadow: 1px 1px 20px -7px #000000;
 }
 
 #ideas #img-ideas-container {

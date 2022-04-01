@@ -106,6 +106,13 @@ ul {
   margin-left: 2rem;
 }
 
+#button-arrow-up:hover,
+.btn-black:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #464646;
+}
+
 #promo {
   background-color: black;
   display: -webkit-box;
@@ -176,6 +183,11 @@ nav {
   width: 250px;
 }
 
+.header-link ul li .btn-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .header-link ul li .text-information {
   margin-left: 8px;
 }
@@ -194,19 +206,9 @@ nav {
   justify-self: flex-start;
 }
 
-.header-search-bar form input {
-  height: 30px;
-  border: none;
-  min-width: 300px;
-  width: 100%;
-  border-radius: 50px;
-  background-color: #e7e6e6;
-  justify-self: flex-start;
-}
-
 #logo-container {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,6 +220,39 @@ nav {
 #logo-container .header-search-bar {
   width: 100%;
   margin-left: 15px;
+}
+
+#logo-container .header-search-bar form {
+  position: relative;
+}
+
+#logo-container .header-search-bar form input {
+  height: 30px;
+  border: none;
+  min-width: 300px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #e7e6e6;
+  justify-self: flex-start;
+  padding-left: 40px;
+}
+
+#logo-container .header-search-bar form input:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #c5c5c5;
+}
+
+#logo-container .header-search-bar form #svg-icon-input {
+  position: absolute;
+  right: -20px;
+  top: 4px;
+}
+
+#logo-container .header-search-bar form #svg-icon-search {
+  position: absolute;
+  left: 8px;
+  top: 4px;
 }
 
 .header-link-container {
@@ -523,7 +558,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1760px) {
   .header {
     position: relative;
     -webkit-box-orient: vertical;
@@ -658,4 +693,4 @@ footer {
     right: 5px;
   }
 }
-/*# sourceMappingURL=common-elements.css.map */
+/*# sourceMappingURL=common-elements-homepage.css.map */

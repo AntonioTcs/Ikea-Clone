@@ -121,6 +121,12 @@ ul {
   justify-content: center;
   margin-left: 2rem;
 }
+
+#button-arrow-up:hover,
+.btn-black:hover {
+  transition: 0.2s;
+  background-color: #464646;
+}
 #promo {
   background-color: black;
   display: flex;
@@ -169,6 +175,11 @@ nav {
         width: 250px;
       }
 
+      .btn-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
       .text-information {
         margin-left: 8px;
       }
@@ -190,26 +201,41 @@ nav {
   justify-self: flex-start;
 }
 
-.header-search-bar {
-  form input {
-    height: 30px;
-    border: none;
-    min-width: 300px;
-    width: 100%;
-    border-radius: 50px;
-    background-color: rgb(231, 230, 230);
-    justify-self: flex-start;
-  }
-}
-
 #logo-container {
-  flex-basis: 50%;
+  flex-basis: 60%;
   display: flex;
   align-items: center;
 
   .header-search-bar {
     width: 100%;
     margin-left: 15px;
+    form {
+      position: relative;
+      input {
+        height: 30px;
+        border: none;
+        min-width: 300px;
+        width: 100%;
+        border-radius: 50px;
+        background-color: rgb(231, 230, 230);
+        justify-self: flex-start;
+        padding-left: 40px;
+      }
+      input:hover {
+        transition: 0.2s;
+        background-color: rgb(197, 197, 197);
+      }
+      #svg-icon-input {
+        position: absolute;
+        right: -20px;
+        top: 4px;
+      }
+      #svg-icon-search {
+        position: absolute;
+        left: 8px;
+        top: 4px;
+      }
+    }
   }
 }
 
@@ -428,7 +454,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1760px) {
   .header {
     position: relative;
     flex-direction: column;
