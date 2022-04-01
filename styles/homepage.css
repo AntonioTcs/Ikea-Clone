@@ -841,5 +841,8 @@ hr {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .article-in-img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=homepage.css.map */
