@@ -719,7 +719,7 @@ nav {
   }
 
   .lowprice-cnt {
-    margin: 0;
+    margin: 20px 20px;
     padding: 0;
   }
   .ourprice-cnt {
@@ -797,8 +797,8 @@ nav {
     }
   }
 }
-@media screen and (max-width: 1400px){
-  .idee-prezzi-cn{
+@media screen and (max-width: 1400px) {
+  .idee-prezzi-cn {
     .img-box {
       width: 550px;
       height: 470px;
@@ -809,7 +809,7 @@ nav {
 }
 
 @media screen and (max-width: 1200px) {
-  footer{
+  footer {
     padding: 10px;
   }
   .circular-hub-cnt {
@@ -864,18 +864,17 @@ nav {
     }
     align-items: flex-start;
     justify-content: start;
-    margin: -10px;
+    margin: 10px;
     padding: 0;
     overflow-x: scroll;
   }
 
   .lowprice-cnt {
-    margin: -10px;
+    margin: 20px 20px;
     padding: 0;
-    margin-bottom: 30px;
   }
   .ourprice-cnt {
-    margin: 20px -20px;
+    margin: 20px 20px;
     padding: 50px;
   }
   .offers-animated-cnt {
@@ -886,7 +885,7 @@ nav {
   }
 
   .idee-prezzi-cnt {
-    margin: 20px -30px;
+    margin: 20px 20px;
     padding: 20px;
     .img-box {
       width: 300px;
@@ -941,7 +940,7 @@ nav {
   }
 
   .circular-hub-cnt {
-    margin: 20px -30px;
+    margin: 20px 20px;
     .crc-btn {
       width: 150px;
       font-size: 16px;
@@ -979,6 +978,11 @@ nav {
     height: fit-content;
   }
 }
+@media screen and (max-width: 600px) {
+  .idee-prezzi-cnt {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .cards-cnt {
@@ -997,9 +1001,5 @@ nav {
   }
   .product-section {
     overflow-x: scroll;
-  }
-
-  .idee-prezzi-cnt {
-    flex-direction: column;
   }
 }

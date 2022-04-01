@@ -895,7 +895,7 @@ nav {
     padding: 0;
   }
   .lowprice-cnt {
-    margin: 0;
+    margin: 20px 20px;
     padding: 0;
   }
   .ourprice-cnt {
@@ -1044,7 +1044,7 @@ nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    margin: -10px;
+    margin: 10px;
     padding: 0;
     overflow-x: scroll;
   }
@@ -1052,12 +1052,11 @@ nav {
     width: 300px;
   }
   .lowprice-cnt {
-    margin: -10px;
+    margin: 20px 20px;
     padding: 0;
-    margin-bottom: 30px;
   }
   .ourprice-cnt {
-    margin: 20px -20px;
+    margin: 20px 20px;
     padding: 50px;
   }
   .offers-animated-cnt {
@@ -1067,7 +1066,7 @@ nav {
     width: 400px;
   }
   .idee-prezzi-cnt {
-    margin: 20px -30px;
+    margin: 20px 20px;
     padding: 20px;
   }
   .idee-prezzi-cnt .img-box {
@@ -1130,7 +1129,7 @@ nav {
     background: #484848;
   }
   .circular-hub-cnt {
-    margin: 20px -30px;
+    margin: 20px 20px;
   }
   .circular-hub-cnt .crc-btn {
     width: 150px;
@@ -1173,6 +1172,15 @@ nav {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .idee-prezzi-cnt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .cards-cnt {
     -webkit-box-align: start;
@@ -1193,12 +1201,6 @@ nav {
   }
   .product-section {
     overflow-x: scroll;
-  }
-  .idee-prezzi-cnt {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 /*# sourceMappingURL=offers-style.css.map */
