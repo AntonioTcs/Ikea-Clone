@@ -86,7 +86,7 @@ ul {
   padding-left: 0;
 }
 
-#button-arrow-up {
+.button-arrow-up {
   background-color: black;
   width: 36px;
   height: 36px;
@@ -106,7 +106,7 @@ ul {
   margin-left: 2rem;
 }
 
-#button-arrow-up:hover,
+.button-arrow-up:hover,
 .btn-black:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -180,7 +180,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250px;
+  width: 230px;
 }
 
 .header-link ul li .btn-link:hover {
@@ -197,6 +197,7 @@ nav {
 }
 
 .header-hamburger {
+  cursor: pointer;
   position: fixed;
   margin-left: -5rem;
   margin-top: 0px;
@@ -229,7 +230,6 @@ nav {
 #logo-container .header-search-bar form input {
   height: 30px;
   border: none;
-  min-width: 300px;
   width: 100%;
   border-radius: 50px;
   background-color: #e7e6e6;
@@ -253,6 +253,34 @@ nav {
   position: absolute;
   left: 8px;
   top: 4px;
+}
+
+.header-hamburger,
+.header-profile-link,
+.header-wish-list,
+.header-cart {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 36px;
+  width: 36px;
+}
+
+.header-hamburger:hover,
+.header-profile-link:hover,
+.header-wish-list:hover,
+.header-cart:hover {
+  cursor: pointer;
+  background-color: #e9e8e8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-link-container {
@@ -497,26 +525,6 @@ footer {
   height: 1.3rem;
 }
 
-.footer-container .footer .footer-main .footer-utilities .change-langueges-container .change-langueges a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: #131313;
-  gap: 0.5rem;
-  border: 1px solid #cacaca;
-  border-radius: 1rem;
-  padding: 0.3rem;
-  width: 9rem;
-}
-
-.footer-container .footer .footer-main .footer-utilities .change-langueges-container .change-langueges a:hover {
-  border-color: #131313;
-}
-
 .footer-container .footer-pie {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,6 +552,26 @@ footer {
 .footer-container .footer-pie .footer-pie-link ul li a:hover {
   text-decoration: underline;
   color: #3a3a3a;
+}
+
+.change-langueges-container .change-langueges a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #131313;
+  gap: 0.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  width: 9rem;
+}
+
+.change-langueges-container .change-langueges a:hover {
+  border-color: #131313;
 }
 
 @media screen and (max-width: 1200px) {
@@ -609,7 +637,7 @@ footer {
   }
   #logo-container .header-search-bar {
     margin-left: 0;
-    width: 100%;
+    width: 90%;
   }
   .header-link ul {
     -ms-flex-wrap: wrap;
@@ -660,7 +688,7 @@ footer {
 }
 
 @media screen and (max-width: 1150px) {
-  #button-arrow-up {
+  .button-arrow-up {
     display: none;
   }
   footer,
@@ -689,8 +717,26 @@ footer {
   }
   .header-hamburger {
     position: absolute;
+    top: 8px;
+    right: -3px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header-profile-link {
+    position: absolute;
     top: 10px;
-    right: 5px;
+    right: 70px;
+  }
+  .header-wish-list {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+  }
+  .header-cart {
+    position: absolute;
+    top: 10px;
+    right: 20px;
   }
 }
 /*# sourceMappingURL=common-elements-homepage.css.map */

@@ -21,11 +21,201 @@
 
     <link rel="stylesheet" href="styles/common-elements-homepage.css" />
     <link rel="stylesheet" href="styles/homepage.css" />
+    
+    <script
+    type="text/javascript"
+    src="script/sidebar-left-hamburger.js"
+    ></script>
+    
+    <script
+      type="text/javascript"
+      src="script/sidebar-right-profile.js"
+    ></script>
+
   </head>
+
   <body>
+    <aside id="hamburger-sidebar">
+      <div class="sidebar-opacity-zone"></div>
+      <div id="sidebar-left">
+        <div id="header-logo-sidebar">
+          <div id="svg-container">
+            <svg
+              focusable="false"
+              class="svg-icon-close-sidebar"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="m11.9997 13.4149 4.9498 4.9497 1.4142-1.4142-4.9498-4.9497 4.9498-4.9498-1.4142-1.4142-4.9498 4.9498L7.05 5.6367 5.6357 7.051l4.9498 4.9498-4.9497 4.9497L7.05 18.3646l4.9497-4.9497z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div id="container-sidebar">
+          <img
+            src="https://www.ikea.com/it/it/static/ikea-logo.f7d9229f806b59ec64cb.svg"
+            alt="img-logo-ikea"
+            type="image/svg"
+          />
+          <div id="btn-access-container">
+            <div id="btn-access">
+              <svg
+                focusable="false"
+                class="svg-icon hnf-svg-icon hnf-btn__icon hnf-person__icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.6724 6.4678c.2734-.2812.6804-.4707 1.3493-.4707.3971 0 .705.0838.9529.2225.241.1348.4379.3311.5934.6193l.0033.006c.1394.2541.237.6185.237 1.1403 0 .7856-.2046 1.2451-.4796 1.5278l-.0048.005c-.2759.2876-.679.4764-1.334.4764-.3857 0-.6962-.082-.956-.2241-.2388-.1344-.4342-.3293-.5888-.6147-.1454-.275-.2419-.652-.2419-1.1704 0-.7902.2035-1.2442.4692-1.5174zm1.3493-2.4717c-1.0834 0-2.054.3262-2.7838 1.0766-.7376.7583-1.0358 1.781-1.0358 2.9125 0 .7656.1431 1.483.4773 2.112l.0031.0058c.3249.602.785 1.084 1.3777 1.4154l.0062.0035c.5874.323 1.2368.4736 1.9235.4736 1.0818 0 2.0484-.3333 2.7755-1.0896.7406-.7627 1.044-1.786 1.044-2.9207 0-.7629-.1421-1.4784-.482-2.0996-.3247-.6006-.7844-1.0815-1.376-1.4125-.5858-.3276-1.2388-.477-1.9297-.477zM6.4691 16.8582c.2983-.5803.7228-1.0273 1.29-1.3572.5582-.3191 1.2834-.5049 2.2209-.5049h4.04c.9375 0 1.6626.1858 2.2209.5049.5672.3299.9917.7769 1.29 1.3572.3031.5896.4691 1.2936.4691 2.1379v1h2v-1c0-1.1122-.2205-2.1384-.6904-3.0523a5.3218 5.3218 0 0 0-2.0722-2.1769c-.9279-.5315-2.0157-.7708-3.2174-.7708H9.98c-1.1145 0-2.2483.212-3.2225.7737-.8982.5215-1.5928 1.2515-2.0671 2.174C4.2205 16.8577 4 17.8839 4 18.9961v1h2v-1c0-.8443.166-1.5483.4691-2.1379z"
+                ></path>
+              </svg>
+              <span>Hej! Accedi o registrati</span>
+            </div>
+            <hr />
+          </div>
+          <div id="link-sidebar-container">
+            <ul id="product-sidebar">
+              <li>Prodotti</li>
+              <li>Ambienti</li>
+            </ul>
+
+            <ul id="offerts-sidebar">
+              <li>Idee e ispirazione</li>
+              <li>Prezzi bassi</li>
+              <li>I nostri servizi</li>
+              <li>Adesso in IKEA</li>
+            </ul>
+
+            <ul id="link-sidebar">
+              <li>Servizio Clienti</li>
+              <li>Dove è il mio ordine?</li>
+              <li>I nostri punti vendita</li>
+              <li>Planner e configuratori</li>
+              <li>IKEA Family</li>
+              <li>IKEA Business Network</li>
+            </ul>
+          </div>
+
+          <div class="change-langueges-container">
+            <div class="change-langueges">
+              <a href="https://www.ikea.com">
+                <svg
+                  focusable="false"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="rgba(19, 19, 19, 0.8)"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.7467 18.1766C12.9482 19.7737 12.2151 20 12 20c-.2151 0-.9482-.2263-1.7467-1.8234-.3065-.6131-.5745-1.3473-.7831-2.1766h5.0596c-.2086.8293-.4766 1.5635-.7831 2.1766zM14.8885 14h-5.777A17.7354 17.7354 0 0 1 9 12c0-.6949.0392-1.3641.1115-2h5.777c.0723.6359.1115 1.3051.1115 2 0 .6949-.0392 1.3641-.1115 2zm1.6955 2c-.2658 1.2166-.6492 2.307-1.1213 3.2138A8.0347 8.0347 0 0 0 18.9297 16H16.584zm3.164-2H16.9c.0656-.6462.1-1.3151.1-2 0-.6849-.0344-1.3538-.1-2h2.848A8.0156 8.0156 0 0 1 20 12a8.0156 8.0156 0 0 1-.252 2zm-.8183-6a8.035 8.035 0 0 0-3.467-3.2138c.4721.9068.8555 1.9972 1.1213 3.2138h2.3457zm-4.3999 0c-.2086-.8293-.4766-1.5635-.7831-2.1766C12.9482 4.2264 12.2151 4 12 4c-.2151 0-.9482.2263-1.7467 1.8234-.3065.613-.5745 1.3473-.7831 2.1766h5.0596zM7.416 8c.2658-1.2166.6491-2.307 1.1213-3.2138A8.035 8.035 0 0 0 5.0703 8H7.416zm-3.164 2A8.0147 8.0147 0 0 0 4 12c0 .6906.0875 1.3608.252 2H7.1a19.829 19.829 0 0 1-.1-2c0-.6849.0344-1.3538.1-2H4.252zm3.164 6H5.0704a8.0347 8.0347 0 0 0 3.467 3.2138C8.0651 18.307 7.6818 17.2166 7.4161 16zM22 12c0-5.5229-4.4772-10-10-10C6.4771 2 2 6.4771 2 12c0 5.5228 4.4771 10 10 10 5.5228 0 10-4.4772 10-10z"
+                  ></path>
+                </svg>
+                Cambia paese
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside id="profile-sidebar">
+      <div class="sidebar-opacity-zone"></div>
+      <div id="container-profile-element">
+        <section id="blueSection-right-sidebar">
+          <div id="right-svg">
+            <div id="right-svg-container">
+              <svg
+                focusable="false"
+                class="svg-icon-close-sidebar"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="m11.9997 13.4149 4.9498 4.9497 1.4142-1.4142-4.9498-4.9497 4.9498-4.9498-1.4142-1.4142-4.9498 4.9498L7.05 5.6367 5.6357 7.051l4.9498 4.9498-4.9497 4.9497L7.05 18.3646l4.9497-4.9497z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <div id="right-sidebar-div-1">
+            <h1>Hej</h1>
+            <button id="right-sidebar-login-btn">Accedi</button>
+          </div>
+          <hr class="white-hr-rigth" />
+          <div class="right-sidebar-div-2-3">
+            <h2>Iscriviti a IKEA Family</h2>
+            <div class="right-sidebar-btn-arrow">
+              <svg
+                focusable="false"
+                class="go-to-up"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="m12.0001 6.9394 8.0007 8.0013-1.4142 1.4141L12 9.7678l-6.5869 6.586-1.414-1.4143 8.001-8z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <hr class="white-hr-rigth" />
+          <div class="right-sidebar-div-2-3">
+            <h2>Iscriviti a IKEA Business Network</h2>
+            <div class="right-sidebar-btn-arrow">
+              <svg
+                focusable="false"
+                class="go-to-up"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="m12.0001 6.9394 8.0007 8.0013-1.4142 1.4141L12 9.7678l-6.5869 6.586-1.414-1.4143 8.001-8z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <div id="right-sidebar-ul-container">
+          <ul>
+            <li>Traccia il tuo ordine</li>
+            <li>Crea liste della spesa</li>
+            <li>Progetta online</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
     <header>
       <a href="#">
-        <div id="button-arrow-up">
+        <div class="button-arrow-up">
           <svg
             focusable="false"
             class="go-to-up"
@@ -67,21 +257,22 @@
       <nav>
         <div class="header-container">
           <div class="header">
-            <svg
-              class="header-hamburger"
-              focusable="false"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="black"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M20 8H4V6h16v2zm0 5H4v-2h16v2zm0 5H4v-2h16v2z"
-              ></path>
-            </svg>
+            <div class="header-hamburger">
+              <svg
+                focusable="false"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 8H4V6h16v2zm0 5H4v-2h16v2zm0 5H4v-2h16v2z"
+                ></path>
+              </svg>
+            </div>
             <div id="logo-container">
               <div class="header-logo">
                 <img
@@ -171,13 +362,6 @@
                   </div>
                 </li>
                 <li class="header-profile-link">
-                  <a
-                    href="https://www.ikea.com/it/it/profile/login/"
-                    aria-label="Il mio profilo"
-                    rel="nofollow"
-                    data-tracking-label="profile"
-                    data-profile-link=""
-                  >
                     <span>
                       <svg
                         focusable="false"
