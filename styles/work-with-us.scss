@@ -8,7 +8,7 @@ body {
 
 @font-face {
   font-family: "Nodo";
-  src: url(../assets/Noto.ttf);
+  src: url(../assets/font/Noto.ttf);
 }
 
 %button-rules {
@@ -573,5 +573,11 @@ article {
     position: absolute;
     top: 2.9rem;
     right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .header-hamburger {
+    top: 3.6rem;
   }
 }
