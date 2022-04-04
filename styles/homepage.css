@@ -40,6 +40,8 @@ aside {
 }
 
 #hamburger-sidebar #sidebar-left {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   overflow-y: auto;
   padding: 1rem;
   -ms-flex-preferred-size: 30%;
@@ -189,24 +191,31 @@ aside {
   margin-bottom: 20px;
 }
 
+#profile-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 #profile-sidebar .sidebar-opacity-zone {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
 
 #profile-sidebar #container-profile-element {
+  border-top-left-radius: 10px;
   background-color: white;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  border-bottom-left-radius: 10px;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
 
 #profile-sidebar #blueSection-right-sidebar {
+  border-top-left-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,6 +377,198 @@ aside {
 #profile-sidebar #right-sidebar-ul-container ul li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#shop-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#shop-sidebar .sidebar-opacity-zone {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+#shop-sidebar #container-shop-element {
+  padding: 2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#shop-sidebar #container-shop-element #shop-svg-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#shop-sidebar #container-shop-element #shop-svg-close #shop-svg-close-container {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#shop-sidebar #container-shop-element #shop-svg-close #shop-svg-close-container svg {
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#shop-sidebar #container-shop-element #shop-svg-close #shop-svg-close-container:hover {
+  -webkit-box-shadow: 1px 1px 10px 5px #e7e7e7b0;
+          box-shadow: 1px 1px 10px 5px #e7e7e7b0;
+}
+
+#shop-sidebar #container-shop-element #shop-svg-close #shop-svg-close-container:hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#shop-sidebar #container-shop-element #text-information-shop {
+  margin-top: 3rem;
+}
+
+#shop-sidebar #container-shop-element #text-information-shop p {
+  font-size: 14px;
+  color: #484848;
+}
+
+#shop-sidebar #container-shop-element #form-shop h3 {
+  font-size: 14px;
+}
+
+#shop-sidebar #container-shop-element #form-shop form {
+  color: #484848;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#shop-sidebar #container-shop-element #form-shop form label {
+  font-size: 14px;
+}
+
+#shop-sidebar #container-shop-element #form-shop form #cap {
+  height: 2.8rem;
+  border-radius: 5px;
+  border: 1px solid #484848;
+}
+
+#shop-sidebar #container-shop-element #form-shop form small {
+  font-size: 11px;
+}
+
+#shop-sidebar #container-shop-element #form-shop form #check-shop-form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shop-sidebar #container-shop-element #form-shop form #check-shop-form input {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#shop-sidebar #container-shop-element #form-shop form #check-shop-form label {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+}
+
+#shop-sidebar #container-shop-element #form-shop form #submitBtnShop {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 900;
+  height: 3.5rem;
+  border-radius: 3.5rem;
+  border: none;
+}
+
+#shop-sidebar #container-shop-element #form-shop form #submitBtnShop:hover {
+  background-color: #4b4b4b;
+}
+
+#shop-sidebar #container-shop-element #alternativesShop {
+  margin-top: 4rem;
+}
+
+#shop-sidebar #container-shop-element #alternativesShop h3:first-child {
+  margin-bottom: 1rem;
+}
+
+#shop-sidebar #container-shop-element #alternativesShop h3 {
+  font-size: 14px;
+}
+
+#shop-sidebar #container-shop-element #alternativesShop hr {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #dfdfdf;
+}
+
+#shop-sidebar #container-shop-element #alternativesShop .alternativesElement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shop-sidebar #container-shop-element #alternativesShop .alternativesElement:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#shop-sidebar #container-shop-element #alternativesShop .alternativesElement .svg-alternative:hover svg {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: translateX(15px) rotateX(360deg);
+          transform: translateX(15px) rotateX(360deg);
 }
 
 main {
@@ -1251,8 +1452,12 @@ hr {
 }
 
 @media screen and (max-width: 1030px) {
-  .sidebar-opacity-zone {
+  #hamburger-sidebar .sidebar-opacity-zone,
+  #profile-sidebar .sidebar-opacity-zone {
     display: none;
+  }
+  #shop-sidebar .sidebar-opacity-zone {
+    display: visible;
   }
   #hamburger-sidebar {
     height: 100%;
@@ -1265,6 +1470,7 @@ hr {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    border-top-right-radius: 0;
   }
   #hamburger-sidebar #sidebar-left #container-sidebar {
     -ms-flex-preferred-size: 95%;
@@ -1285,8 +1491,10 @@ hr {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     overflow-y: auto;
+    border-top-left-radius: 0;
   }
   #profile-sidebar #container-profile-element #blueSection-right-sidebar {
+    border-top-left-radius: 0;
     min-height: 335px;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -1296,19 +1504,33 @@ hr {
   }
 }
 
+@media screen and (max-width: 850px) {
+  #shop-sidebar #container-shop-element {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    overflow-y: auto;
+    border-top-left-radius: 0;
+  }
+  .sidebar-opacity-zone {
+    display: none;
+  }
+  #hamburger-sidebar #sidebar-left #header-logo-sidebar {
+    position: absolute;
+  }
+  #hamburger-sidebar #sidebar-left #header-logo-sidebar #svg-container {
+    position: absolute;
+    display: visible;
+    top: 0;
+    right: 3px;
+  }
+  #shop-sidebar #container-shop-element #text-information-shop {
+    margin-top: 0.4rem;
+  }
+}
+
 @media screen and (max-width: 370px) {
   .right-sidebar-div-2-3 {
     font-size: 9px;
-  }
-  #profile-sidebar #blueSection-right-sidebar {
-    /*  .right-sidebar-div-2-3 .right-sidebar-btn-arrow {
-        width: 26px;
-        height: 26px;
-        svg {
-          width: 16px;
-          height: 16px;
-        }
-      } */
   }
   #profile-sidebar #blueSection-right-sidebar hr {
     margin: 0;

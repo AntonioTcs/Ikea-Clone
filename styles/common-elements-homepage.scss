@@ -133,7 +133,7 @@ ul {
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-
+  padding: 0.2rem;
   a {
     margin-left: 10px;
     font-size: small;
@@ -511,6 +511,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     .header-logo {
       align-self: flex-start;
     }

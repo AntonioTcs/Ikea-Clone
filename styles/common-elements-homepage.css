@@ -125,6 +125,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 2rem;
+  padding: 0.2rem;
 }
 
 #promo a {
@@ -627,6 +628,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   #logo-container * {
     margin: 2px;
