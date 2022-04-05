@@ -1422,6 +1422,87 @@ hr {
   font-family: "Noto IKEA";
 }
 
+#newsletterForm {
+  background: #020024;
+  background: radial-gradient(circle, #f5f5f57a, #f5f5f59a, #f5f5f5);
+  border-radius: 5rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 60px;
+  height: 25rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#newsletterForm input {
+  margin-bottom: 3rem;
+  height: 2rem;
+  border: none;
+  border-bottom: 1px solid #484848;
+  background-color: transparent;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-left: 25px;
+}
+
+#newsletterForm #inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#newsletterForm button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#newsletterForm button::before {
+  content: "Invia!";
+}
+
+#newsletterForm button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 18px 4px #636363;
+          box-shadow: 1px 1px 18px 4px #636363;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 @media screen and (max-width: 1300px) {
   #delivery-offer {
     -webkit-box-orient: vertical;
@@ -1501,6 +1582,25 @@ hr {
   }
   #profile-sidebar #container-profile-element ul {
     display: block;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #newsletterForm {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #newsletterForm {
+    border-radius: 1rem;
+    height: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  #newsletterForm input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
