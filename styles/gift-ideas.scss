@@ -16,133 +16,6 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  .sidebar-left {
-    height: 100vh;
-    width: 320px;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    z-index: 2;
-    visibility: hidden;
-    display: flex;
-    border-right: 2px solid rgb(78, 78, 78);
-    align-items: start;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px 0 40px 160px;
-    .plus-3 {
-      position: absolute;
-      width: 25px;
-      top: 2rem;
-      left: 2rem;
-      cursor: pointer;
-    }
-    .first-ul {
-      list-style-type: none;
-      li {
-        padding: 0.5rem;
-        font-weight: bold;
-        a {
-          text-decoration: none;
-          color: black;
-        }
-      }
-    }
-    .second-ul {
-      list-style-type: none;
-      li {
-        padding: 0.5rem;
-        a {
-          text-decoration: none;
-          color: black;
-        }
-      }
-    }
-    .change-langueges {
-      margin-bottom: 40px;
-      a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: rgb(19, 19, 19);
-        gap: 0.5rem;
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 1rem;
-        padding: 0.3rem;
-        width: 9rem;
-        &:hover {
-          border-color: rgb(19, 19, 19);
-        }
-      }
-    }
-  }
-  .sidebar-right {
-    height: 100vh;
-    width: 450px;
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    background-color: white;
-    .blue-box {
-      background-color: #0058a3;
-      height: 50%;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .accedi {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 100px 50px 0 50px;
-        border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
-        a {
-          text-decoration: none;
-          background-color: white;
-          padding: 0.5rem;
-          border-radius: 50%;
-        }
-      }
-      .ikea-family {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 50px;
-        border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
-        a {
-          text-decoration: none;
-          background-color: white;
-          padding: 0.5rem;
-          border-radius: 50%;
-          width: 1rem;
-          height: 1rem;
-        }
-      }
-      .ikea-business {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 50px;
-        border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
-        a {
-          text-decoration: none;
-          background-color: white;
-          padding: 0.5rem;
-          border-radius: 50%;
-          width: 1rem;
-          height: 1rem;
-        }
-      }
-    }
-    .white-box {
-      background-color: white;
-      padding-left: 50px;
-      height: 50%;
-    }
-  }
   header {
     #promo {
       background-color: black;
@@ -258,18 +131,267 @@ body {
     padding: 5rem 0 4rem 0;
     align-items: center;
     box-sizing: border-box;
+    z-index: 5;
     .bottom-icon {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1rem;
-      span {
+      .share-icon {
+        visibility: hidden;
+      }
+      div {
         background-color: black;
-        width: 2.5rem;
+        max-width: max-content;
         height: 2.5rem;
-        border-radius: 50%;
+        border-radius: 2rem;
         text-align: center;
-        line-height: 3rem;
+        line-height: 2.5em;
+        padding: 0 0.5rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        svg {
+          margin-top: 0.4rem;
+        }
+        span {
+          display: none;
+          color: white;
+          font-size: small;
+        }
+        &:hover {
+          span {
+            display: block;
+          }
+          svg {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    visibility: collapse;
+    background-color: rgba(78, 78, 78, 0.5);
+  }
+  .sidebar-left {
+    height: 100vh;
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    border-right: 2px solid rgb(78, 78, 78);
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0 40px 160px;
+    left: -490px;
+    top: 0;
+    transition: 0.8s ease-out;
+    .plus-3L {
+      position: absolute;
+      width: 25px;
+      top: 2rem;
+      left: 2rem;
+      cursor: pointer;
+    }
+    div {
+      h1 {
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .first-ul {
+      list-style-type: none;
+      li {
+        padding: 0.5rem;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .second-ul {
+      list-style-type: none;
+      li {
+        padding: 0.5rem;
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .change-langueges {
+      margin-bottom: 40px;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(19, 19, 19);
+        gap: 0.5rem;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 1rem;
+        padding: 0.3rem;
+        width: 9rem;
+        &:hover {
+          border-color: rgb(19, 19, 19);
+        }
+      }
+    }
+  }
+  .sidebar-right {
+    height: 100vh;
+    width: 450px;
+    position: fixed;
+    right: -460px;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    transition: 0.8s ease-out;
+    .plus-3R {
+      position: absolute;
+      width: 25px;
+      top: 2rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+    .blue-box {
+      background-color: #0058a3;
+      height: 50%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      .accedi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50%;
+        padding: 100px 50px 0 50px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
+        a {
+          text-decoration: none;
+          background-color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 2rem;
+          color: black;
+          font-size: smaller;
+          font-weight: bolder;
+        }
+      }
+      .ikea-sidebar-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 25%;
+        padding: 0 50px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
+        .textLink {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .arrowLink {
+          text-decoration: none;
+          background-color: white;
+          padding: 0.5rem;
+          border-radius: 50%;
+          width: 1rem;
+          height: 1rem;
+          text-align: center;
+          line-height: 0.6rem;
+          font-size: 2rem;
+        }
+      }
+    }
+    .white-box {
+      background-color: white;
+      padding-left: 50px;
+      height: 50%;
+      ul {
+        list-style-type: none;
+        padding-top: 2rem;
+        li {
+          padding-bottom: 1rem;
+          a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .third-sidebar {
+    height: 100vh;
+    width: 400px;
+    position: fixed;
+    right: -590px;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    border-left: 2px solid rgb(78, 78, 78);
+    align-items: flex-start;
+    padding: 70px 50px 0 50px;
+    transition: 0.8s ease-out;
+    .plus-3 {
+      position: absolute;
+      width: 25px;
+      top: 2rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+    .divImg {
+      display: flex;
+      flex-basis: 35%;
+      align-items: center;
+      gap: 2rem;
+      div {
+        img {
+          width: 100px;
+        }
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        padding: 1.5rem;
+        display: flex;
+        gap: 0.5rem;
+        a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
@@ -426,6 +548,29 @@ body {
           a {
             color: rgb(78, 78, 78);
           }
+        }
+      }
+    }
+    .fourth-section {
+      display: flex;
+      justify-content: center;
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(236, 236, 236);
+        text-align: center;
+        padding: 2rem 5rem;
+        label {
+          padding-top: 0.5rem;
+        }
+        button {
+          margin-top: 1rem;
+          background-color: white;
+          padding: 0.5rem 1rem;
+          border: 1px solid black;
+          border-radius: 1rem;
+          cursor: pointer;
         }
       }
     }

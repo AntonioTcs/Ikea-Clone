@@ -16,197 +16,6 @@ body {
   padding: 0;
 }
 
-body .sidebar-left {
-  height: 100vh;
-  width: 320px;
-  background-color: white;
-  position: fixed;
-  z-index: 2;
-  visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-right: 2px solid #4e4e4e;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px 0 40px 160px;
-}
-
-body .sidebar-left .plus-3 {
-  position: absolute;
-  width: 25px;
-  top: 2rem;
-  left: 2rem;
-  cursor: pointer;
-}
-
-body .sidebar-left .first-ul {
-  list-style-type: none;
-}
-
-body .sidebar-left .first-ul li {
-  padding: 0.5rem;
-  font-weight: bold;
-}
-
-body .sidebar-left .first-ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-body .sidebar-left .second-ul {
-  list-style-type: none;
-}
-
-body .sidebar-left .second-ul li {
-  padding: 0.5rem;
-}
-
-body .sidebar-left .second-ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-body .sidebar-left .change-langueges {
-  margin-bottom: 40px;
-}
-
-body .sidebar-left .change-langueges a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: #131313;
-  gap: 0.5rem;
-  border: 1px solid #cacaca;
-  border-radius: 1rem;
-  padding: 0.3rem;
-  width: 9rem;
-}
-
-body .sidebar-left .change-langueges a:hover {
-  border-color: #131313;
-}
-
-body .sidebar-right {
-  height: 100vh;
-  width: 450px;
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  background-color: white;
-}
-
-body .sidebar-right .blue-box {
-  background-color: #0058a3;
-  height: 50%;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-body .sidebar-right .blue-box .accedi {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 100px 50px 0 50px;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
-}
-
-body .sidebar-right .blue-box .accedi a {
-  text-decoration: none;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 50%;
-}
-
-body .sidebar-right .blue-box .ikea-family {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 50px;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
-}
-
-body .sidebar-right .blue-box .ikea-family a {
-  text-decoration: none;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-}
-
-body .sidebar-right .blue-box .ikea-business {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 50px;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
-}
-
-body .sidebar-right .blue-box .ikea-business a {
-  text-decoration: none;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 50%;
-  width: 1rem;
-  height: 1rem;
-}
-
-body .sidebar-right .white-box {
-  background-color: white;
-  padding-left: 50px;
-  height: 50%;
-}
-
 body header #promo {
   background-color: black;
   display: -webkit-box;
@@ -374,6 +183,7 @@ body aside {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 5;
 }
 
 body aside .bottom-icon {
@@ -390,13 +200,357 @@ body aside .bottom-icon {
   gap: 1rem;
 }
 
-body aside .bottom-icon span {
+body aside .bottom-icon .share-icon {
+  visibility: hidden;
+}
+
+body aside .bottom-icon div {
   background-color: black;
-  width: 2.5rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   height: 2.5rem;
-  border-radius: 50%;
+  border-radius: 2rem;
   text-align: center;
-  line-height: 3rem;
+  line-height: 2.5em;
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body aside .bottom-icon div svg {
+  margin-top: 0.4rem;
+}
+
+body aside .bottom-icon div span {
+  display: none;
+  color: white;
+  font-size: small;
+}
+
+body aside .bottom-icon div:hover span {
+  display: block;
+}
+
+body aside .bottom-icon div:hover svg {
+  margin-top: 0;
+}
+
+body .overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  visibility: collapse;
+  background-color: rgba(78, 78, 78, 0.5);
+}
+
+body .sidebar-left {
+  height: 100vh;
+  width: 320px;
+  background-color: white;
+  position: fixed;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 2px solid #4e4e4e;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0 40px 160px;
+  left: -490px;
+  top: 0;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+}
+
+body .sidebar-left .plus-3L {
+  position: absolute;
+  width: 25px;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+}
+
+body .sidebar-left div h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+body .sidebar-left div h1 a:hover {
+  text-decoration: underline;
+}
+
+body .sidebar-left .first-ul {
+  list-style-type: none;
+}
+
+body .sidebar-left .first-ul li {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+body .sidebar-left .first-ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .sidebar-left .first-ul li a:hover {
+  text-decoration: underline;
+}
+
+body .sidebar-left .second-ul {
+  list-style-type: none;
+}
+
+body .sidebar-left .second-ul li {
+  padding: 0.5rem;
+}
+
+body .sidebar-left .second-ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .sidebar-left .second-ul li a:hover {
+  text-decoration: underline;
+}
+
+body .sidebar-left .change-langueges {
+  margin-bottom: 40px;
+}
+
+body .sidebar-left .change-langueges a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #131313;
+  gap: 0.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  width: 9rem;
+}
+
+body .sidebar-left .change-langueges a:hover {
+  border-color: #131313;
+}
+
+body .sidebar-right {
+  height: 100vh;
+  width: 450px;
+  position: fixed;
+  right: -460px;
+  top: 0;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: white;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+}
+
+body .sidebar-right .plus-3R {
+  position: absolute;
+  width: 25px;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+body .sidebar-right .blue-box {
+  background-color: #0058a3;
+  height: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .sidebar-right .blue-box .accedi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50%;
+  padding: 100px 50px 0 50px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
+}
+
+body .sidebar-right .blue-box .accedi a {
+  text-decoration: none;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: black;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+body .sidebar-right .blue-box .ikea-sidebar-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 25%;
+  padding: 0 50px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.421);
+}
+
+body .sidebar-right .blue-box .ikea-sidebar-link .textLink {
+  text-decoration: none;
+  color: white;
+}
+
+body .sidebar-right .blue-box .ikea-sidebar-link .textLink:hover {
+  text-decoration: underline;
+}
+
+body .sidebar-right .blue-box .ikea-sidebar-link .arrowLink {
+  text-decoration: none;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  line-height: 0.6rem;
+  font-size: 2rem;
+}
+
+body .sidebar-right .white-box {
+  background-color: white;
+  padding-left: 50px;
+  height: 50%;
+}
+
+body .sidebar-right .white-box ul {
+  list-style-type: none;
+  padding-top: 2rem;
+}
+
+body .sidebar-right .white-box ul li {
+  padding-bottom: 1rem;
+}
+
+body .sidebar-right .white-box ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .sidebar-right .white-box ul li a:hover {
+  text-decoration: underline;
+}
+
+body .third-sidebar {
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  right: -590px;
+  top: 0;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: white;
+  border-left: 2px solid #4e4e4e;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 70px 50px 0 50px;
+  -webkit-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+}
+
+body .third-sidebar .plus-3 {
+  position: absolute;
+  width: 25px;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+body .third-sidebar .divImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+body .third-sidebar .divImg div img {
+  width: 100px;
+}
+
+body .third-sidebar ul {
+  list-style-type: none;
+}
+
+body .third-sidebar ul li {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+body .third-sidebar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .third-sidebar ul li a:hover {
+  text-decoration: underline;
 }
 
 body main {
@@ -652,6 +806,44 @@ body main .third-section .box-payment-service .box-payment-service-item p {
 
 body main .third-section .box-payment-service .box-payment-service-item a {
   color: #4e4e4e;
+}
+
+body main .fourth-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .fourth-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ececec;
+  text-align: center;
+  padding: 2rem 5rem;
+}
+
+body main .fourth-section form label {
+  padding-top: 0.5rem;
+}
+
+body main .fourth-section form button {
+  margin-top: 1rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 body footer {
