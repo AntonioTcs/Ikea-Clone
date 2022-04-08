@@ -16,6 +16,142 @@ body {
   padding: 0;
 }
 
+body .sidebar-left {
+  height: 100vh;
+  width: 320px;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 2px solid #4e4e4e;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0 40px 160px;
+}
+
+body .sidebar-left .plus-3 {
+  position: absolute;
+  width: 25px;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+}
+
+body .sidebar-left .first-ul {
+  list-style-type: none;
+}
+
+body .sidebar-left .first-ul li {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+body .sidebar-left .first-ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .sidebar-left .second-ul {
+  list-style-type: none;
+}
+
+body .sidebar-left .second-ul li {
+  padding: 0.5rem;
+}
+
+body .sidebar-left .second-ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .sidebar-left .change-langueges {
+  margin-bottom: 40px;
+}
+
+body .sidebar-left .change-langueges a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #131313;
+  gap: 0.5rem;
+  border: 1px solid #cacaca;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  width: 9rem;
+}
+
+body .sidebar-left .change-langueges a:hover {
+  border-color: #131313;
+}
+
+body .sidebar-right {
+  height: 100vh;
+  width: 450px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: white;
+}
+
+body .sidebar-right .blue-box {
+  background-color: #0058a3;
+  padding-left: 50px;
+  height: 50%;
+}
+
+body .sidebar-right .blue-box .accedi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .sidebar-right .blue-box .accedi a {
+  text-decoration: none;
+}
+
+body .sidebar-right .blue-box .ikea-family {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .sidebar-right .blue-box .ikea-business {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .sidebar-right .white-box {
+  background-color: white;
+  padding-left: 50px;
+  height: 50%;
+}
+
 body header #promo {
   background-color: black;
   display: -webkit-box;
@@ -78,20 +214,33 @@ body header nav .header-container .header #logo-container .header-logo {
 
 body header nav .header-container .header #logo-container .header-search-bar {
   width: 80%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body header nav .header-container .header #logo-container .header-search-bar form {
-  width: 100%;
+body header nav .header-container .header #logo-container .header-search-bar .svg-icon-search {
+  position: absolute;
+  left: 0.5rem;
 }
 
-body header nav .header-container .header #logo-container .header-search-bar form input {
+body header nav .header-container .header #logo-container .header-search-bar input {
   height: 30px;
   border: none;
-  min-width: 270px;
-  width: 85%;
+  width: 100%;
   border-radius: 50px;
   background-color: #e7e6e6;
   justify-self: flex-start;
+  padding: 0.5rem 0 0.5rem 2.5rem;
+}
+
+body header nav .header-container .header #logo-container .header-search-bar .svg-icon-camera {
+  position: absolute;
+  right: 1rem;
 }
 
 body header nav .header-container .header .header-link ul {
@@ -121,6 +270,10 @@ body header nav .header-container .header .header-link ul li button {
 
 body header nav .header-container .header .header-link ul li a span {
   margin: 0.5rem;
+}
+
+body header nav .header-container .header .header-link ul .header-hamb {
+  visibility: hidden;
 }
 
 body header nav .header-link-container {
@@ -713,19 +866,25 @@ body footer .footer-container .footer-pie .footer-pie-link ul li a:hover {
             align-items: flex-start;
   }
   body header nav .header-container .header .header-link ul li:last-child {
+    visibility: visible;
     position: absolute;
     top: 5rem;
-    right: 2rem;
+    right: 1rem;
+  }
+  body header nav .header-container .header .header-link ul li:nth-child(5) {
+    position: absolute;
+    top: 5rem;
+    right: 3.5rem;
   }
   body header nav .header-container .header .header-link ul li:nth-child(4) {
     position: absolute;
     top: 5rem;
-    right: 5rem;
+    right: 6rem;
   }
   body header nav .header-container .header .header-link ul li:nth-child(3) {
     position: absolute;
     top: 5rem;
-    right: 8rem;
+    right: 8.5rem;
   }
   body main {
     margin-left: 2rem;
@@ -861,7 +1020,7 @@ body footer .footer-container .footer-pie .footer-pie-link ul li a:hover {
             align-items: flex-start;
   }
   body header nav .header-container .header #logo-container .header-search-bar {
-    width: 100vw;
+    width: 80vw;
   }
   body header nav .header-container .header .header-link ul {
     -webkit-box-orient: vertical;

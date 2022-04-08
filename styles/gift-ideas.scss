@@ -16,6 +16,99 @@ ul {
 body {
   margin: 0;
   padding: 0;
+  .sidebar-left {
+    height: 100vh;
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 2;
+    visibility: hidden;
+    display: flex;
+    border-right: 2px solid rgb(78, 78, 78);
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0 40px 160px;
+    .plus-3 {
+      position: absolute;
+      width: 25px;
+      top: 2rem;
+      left: 2rem;
+      cursor: pointer;
+    }
+    .first-ul {
+      list-style-type: none;
+      li {
+        padding: 0.5rem;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .second-ul {
+      list-style-type: none;
+      li {
+        padding: 0.5rem;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .change-langueges {
+      margin-bottom: 40px;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(19, 19, 19);
+        gap: 0.5rem;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 1rem;
+        padding: 0.3rem;
+        width: 9rem;
+        &:hover {
+          border-color: rgb(19, 19, 19);
+        }
+      }
+    }
+  }
+  .sidebar-right {
+    height: 100vh;
+    width: 450px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    .blue-box {
+      background-color: #0058a3;
+      padding-left: 50px;
+      height: 50%;
+      .accedi {
+        display: flex;
+        a {
+          text-decoration: none;
+        }
+      }
+      .ikea-family {
+        display: flex;
+      }
+      .ikea-business {
+        display: flex;
+      }
+    }
+    .white-box {
+      background-color: white;
+      padding-left: 50px;
+      height: 50%;
+    }
+  }
   header {
     #promo {
       background-color: black;
@@ -53,17 +146,25 @@ body {
             }
             .header-search-bar {
               width: 80%;
-              form {
+              position: relative;
+              display: flex;
+              align-items: center;
+              .svg-icon-search {
+                position: absolute;
+                left: 0.5rem;
+              }
+              input {
+                height: 30px;
+                border: none;
                 width: 100%;
-                input {
-                  height: 30px;
-                  border: none;
-                  min-width: 270px;
-                  width: 85%;
-                  border-radius: 50px;
-                  background-color: rgb(231, 230, 230);
-                  justify-self: flex-start;
-                }
+                border-radius: 50px;
+                background-color: rgb(231, 230, 230);
+                justify-self: flex-start;
+                padding: 0.5rem 0 0.5rem 2.5rem;
+              }
+              .svg-icon-camera {
+                position: absolute;
+                right: 1rem;
               }
             }
           }
@@ -84,6 +185,9 @@ body {
 
               li a span {
                 margin: 0.5rem;
+              }
+              .header-hamb {
+                visibility: hidden;
               }
             }
           }
@@ -476,19 +580,25 @@ body {
             align-items: flex-start;
             .header-link {
               ul li:last-child {
+                visibility: visible;
                 position: absolute;
                 top: 5rem;
-                right: 2rem;
+                right: 1rem;
+              }
+              ul li:nth-child(5) {
+                position: absolute;
+                top: 5rem;
+                right: 3.5rem;
               }
               ul li:nth-child(4) {
                 position: absolute;
                 top: 5rem;
-                right: 5rem;
+                right: 6rem;
               }
               ul li:nth-child(3) {
                 position: absolute;
                 top: 5rem;
-                right: 8rem;
+                right: 8.5rem;
               }
             }
           }
@@ -615,7 +725,7 @@ body {
               flex-direction: column;
               align-items: flex-start;
               .header-search-bar {
-                width: 100vw;
+                width: 80vw;
               }
             }
             .header-link {
