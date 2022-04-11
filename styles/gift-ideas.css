@@ -202,6 +202,9 @@ body aside .bottom-icon {
 
 body aside .bottom-icon .share-icon {
   visibility: hidden;
+  left: 3.5rem;
+  position: fixed;
+  bottom: 5rem;
 }
 
 body aside .bottom-icon div {
@@ -221,10 +224,10 @@ body aside .bottom-icon div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-body aside .bottom-icon div svg {
-  margin-top: 0.4rem;
+  left: 3.5rem;
+  position: fixed;
+  bottom: 1.5rem;
+  cursor: pointer;
 }
 
 body aside .bottom-icon div span {
@@ -808,6 +811,54 @@ body main .third-section .box-payment-service .box-payment-service-item a {
   color: #4e4e4e;
 }
 
+body main .third-section .bottom-icon2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  gap: 1rem;
+}
+
+body main .third-section .bottom-icon2 div {
+  background-color: black;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  height: 2.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 2.5em;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .third-section .bottom-icon2 div span {
+  display: none;
+  color: white;
+  font-size: small;
+}
+
+body main .third-section .bottom-icon2 div:hover span {
+  display: block;
+}
+
+body main .third-section .bottom-icon2 div:hover svg {
+  margin-top: 0;
+}
+
 body main .fourth-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -963,7 +1014,20 @@ body footer .footer-container .footer .footer-main .footer-links .footer-link-ri
   gap: 2rem;
 }
 
-body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li ul {
+body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li .ul-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li .ul-title svg {
+  visibility: collapse;
+}
+
+body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li .ul-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,6 +1210,11 @@ body footer .footer-container .footer-pie .footer-pie-link ul li a:hover {
   body main .third-section .first-box-card-gift {
     padding-right: 15rem;
   }
+  body main .third-section .bottom-icon2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   body aside {
     display: none;
   }
@@ -1211,16 +1280,24 @@ body footer .footer-container .footer-pie .footer-pie-link ul li a:hover {
             flex-direction: column;
   }
   body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
     padding-bottom: 1rem;
+  }
+  body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li .ul-title svg {
+    visibility: visible;
+  }
+  body footer .footer-container .footer .footer-main .footer-links .footer-link-right .main-ul .main-li .ul-link {
+    display: none;
   }
   body footer .footer-container .footer .footer-main .footer-utilities {
     -webkit-box-orient: vertical;

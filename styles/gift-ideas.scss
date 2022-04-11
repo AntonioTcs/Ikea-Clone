@@ -139,6 +139,9 @@ body {
       gap: 1rem;
       .share-icon {
         visibility: hidden;
+        left: 3.5rem;
+        position: fixed;
+        bottom: 5rem;
       }
       div {
         background-color: black;
@@ -151,9 +154,10 @@ body {
         display: flex;
         gap: 0.5rem;
         align-items: center;
-        svg {
-          margin-top: 0.4rem;
-        }
+        left: 3.5rem;
+        position: fixed;
+        bottom: 1.5rem;
+        cursor: pointer;
         span {
           display: none;
           color: white;
@@ -550,6 +554,39 @@ body {
           }
         }
       }
+      .bottom-icon2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        gap: 1rem;
+        div {
+          background-color: black;
+          max-width: max-content;
+          height: 2.5rem;
+          border-radius: 2rem;
+          text-align: center;
+          line-height: 2.5em;
+          cursor: pointer;
+          padding: 0 0.5rem;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          span {
+            display: none;
+            color: white;
+            font-size: small;
+          }
+          &:hover {
+            span {
+              display: block;
+            }
+            svg {
+              margin-top: 0;
+            }
+          }
+        }
+      }
     }
     .fourth-section {
       display: flex;
@@ -640,7 +677,14 @@ body {
                   display: flex;
                   flex-direction: column;
                   gap: 2rem;
-                  ul {
+                  .ul-title {
+                    display: flex;
+                    justify-content: space-between;
+                    svg {
+                      visibility: collapse;
+                    }
+                  }
+                  .ul-link {
                     display: flex;
                     flex-direction: column;
                     gap: 1.5rem;
@@ -802,6 +846,9 @@ body {
         .first-box-card-gift {
           padding-right: 15rem;
         }
+        .bottom-icon2 {
+          display: flex;
+        }
       }
     }
     aside {
@@ -864,11 +911,19 @@ body {
               flex-direction: column;
               .footer-link-right {
                 .main-ul {
-                  flex-wrap: wrap;
-                  justify-content: space-between;
+                  display: flex;
+                  flex-direction: column;
                   .main-li {
                     flex-basis: 30%;
                     padding-bottom: 1rem;
+                    .ul-title {
+                      svg {
+                        visibility: visible;
+                      }
+                    }
+                    .ul-link {
+                      display: none;
+                    }
                   }
                 }
               }
