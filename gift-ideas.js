@@ -82,13 +82,21 @@ const phoneNumber = document.getElementById("phonenumber");
 const formBtn = document.getElementById("form-btn");
 
 function submitPersonForm() {
-  const person = {
-    firstName: firstName.value,
-    lastName: lastName.value,
-    eMail: eMail.value,
-    phone: phoneNumber.value,
-  };
-  console.log(person);
+  if (
+    firstName.value != "" &&
+    lastName.value != "" &&
+    eMail.value != "" &&
+    phoneNumber.value != NaN &&
+    phoneNumber.value != ""
+  ) {
+    const person = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      eMail: eMail.value,
+      phone: phoneNumber.value,
+    };
+    console.log(person);
+  }
 }
 
 formBtn.addEventListener("click", submitPersonForm);
@@ -118,20 +126,62 @@ startUp[1].addEventListener("click", () => {
 
 const ulTitle = document.querySelectorAll(".ul-title");
 const ulLink = document.querySelectorAll(".ul-link");
+const overlay2 = document.querySelectorAll(".overlay2");
 
+//APRI LISTE
 ulTitle[0].addEventListener("click", () => {
-  ulLink[0].style.display = "flex";
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    ulLink[0].style.display = "flex";
+    overlay2[0].style.visibility = "visible";
+  }
 });
+
 ulTitle[1].addEventListener("click", () => {
-  ulLink[1].style.display = "flex";
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    ulLink[1].style.display = "flex";
+    overlay2[1].style.visibility = "visible";
+  }
 });
+
 ulTitle[2].addEventListener("click", () => {
-  ulLink[2].style.display = "flex";
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    ulLink[2].style.display = "flex";
+    overlay2[2].style.visibility = "visible";
+  }
 });
+
 ulTitle[3].addEventListener("click", () => {
-  if ((ulLink[3].style.display = "none")) {
+  if (window.matchMedia("(max-width: 900px)").matches) {
     ulLink[3].style.display = "flex";
-  } else {
-    ulLink[3].style.display = "none";
+    overlay2[3].style.visibility = "visible";
+  }
+});
+
+//CHIUDI LISTE
+overlay2[0].addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    ulLink[[0]].style.display = "none";
+    overlay2[0].style.visibility = "collapse";
+  }
+});
+
+overlay2[1].addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    ulLink[[1]].style.display = "none";
+    overlay2[1].style.visibility = "collapse";
+  }
+});
+
+overlay2[2].addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    ulLink[[2]].style.display = "none";
+    overlay2[2].style.visibility = "collapse";
+  }
+});
+
+overlay2[3].addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    ulLink[[3]].style.display = "none";
+    overlay2[3].style.visibility = "collapse";
   }
 });
