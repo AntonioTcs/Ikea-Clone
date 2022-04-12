@@ -181,6 +181,11 @@ aside {
   margin-bottom: 20px;
 }
 
+#hamburger-sidebar #sidebar-left #container-sidebar #link-sidebar-container #offerts-sidebar li a {
+  text-decoration: none;
+  color: black;
+}
+
 #hamburger-sidebar #sidebar-left #container-sidebar #link-sidebar-container #link-sidebar {
   margin-top: 5rem;
   font-size: 14px;
