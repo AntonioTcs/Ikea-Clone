@@ -5,8 +5,7 @@ window.onload = () => {
 
   hamburger.addEventListener("click", () => {
     function close() {
-      sidebar.style.opacity = "0";
-      sidebar.style.visibility = "hidden";
+      sidebar.classList.remove("active");
       document.body.style.overflowY = "initial";
     }
 
@@ -14,8 +13,7 @@ window.onload = () => {
     let closebtn = sidebar.querySelector("#svg-container");
     let closeSpace = sidebar.querySelector(".sidebar-opacity-zone");
 
-    sidebar.style.opacity = "1";
-    sidebar.style.visibility = "visible";
+    sidebar.classList.toggle("active");
     document.body.style.overflowY = "hidden";
 
     closebtn.addEventListener("click", close);
@@ -24,8 +22,7 @@ window.onload = () => {
 
   profile.addEventListener("click", () => {
     function close() {
-      sidebar.style.opacity = "0";
-      sidebar.style.visibility = "hidden";
+      sidebar.classList.remove("active");
       document.body.style.overflowY = "initial";
     }
 
@@ -33,8 +30,7 @@ window.onload = () => {
     let btnclose = sidebar.querySelector("#right-svg-container");
     let closeSpace = sidebar.querySelector(".sidebar-opacity-zone");
 
-    sidebar.style.opacity = "1";
-    sidebar.style.visibility = "visible";
+    sidebar.classList.toggle("active");
     document.body.style.overflowY = "hidden";
 
     btnclose.addEventListener("click", close);
@@ -45,16 +41,14 @@ window.onload = () => {
     event.preventDefault();
 
     function close() {
-      sidebar.style.visibility = "hidden";
-      sidebar.style.opacity = "0";
+      sidebar.classList.remove("active");
       document.body.style.overflowY = "initial";
     }
     let sidebar = document.querySelector("#shop-sidebar");
     let closeBtn = document.querySelector("#shop-svg-close-container");
     let closeSpace = sidebar.querySelector(".sidebar-opacity-zone");
 
-    sidebar.style.visibility = "visible";
-    sidebar.style.opacity = "1";
+    sidebar.classList.toggle("active");
     document.body.style.overflowY = "hidden";
 
     closeBtn.addEventListener("click", close);
@@ -75,6 +69,7 @@ window.onload = () => {
       console.log(
         `${capitalizeFirstLetter(singleInput.id)}: ${singleInput.value}`
       );
+      singleInput.value = "";
     }
   });
 };

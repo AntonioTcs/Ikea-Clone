@@ -389,6 +389,11 @@ aside {
   }
 }
 
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 main {
   margin-top: 5rem;
   margin-left: $sec-margin;

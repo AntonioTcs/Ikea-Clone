@@ -571,6 +571,11 @@ aside {
           transform: translateX(15px) rotateX(360deg);
 }
 
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 main {
   margin-top: 5rem;
   margin-left: 10rem;
