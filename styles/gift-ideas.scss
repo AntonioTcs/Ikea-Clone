@@ -611,6 +611,29 @@ body {
         }
       }
     }
+    .fourth-section {
+      display: flex;
+      justify-content: center;
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(236, 236, 236);
+        text-align: center;
+        padding: 2rem 5rem;
+        label {
+          padding-top: 0.5rem;
+        }
+        button {
+          margin-top: 1rem;
+          background-color: white;
+          padding: 0.5rem 1rem;
+          border: 1px solid black;
+          border-radius: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
   }
   footer {
     background-color: rgb(236, 236, 236);
