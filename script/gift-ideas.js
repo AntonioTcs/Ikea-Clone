@@ -78,22 +78,14 @@ hamb2.addEventListener("click", () => {
 const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
 const eMail = document.getElementById("email");
-const phoneNumber = document.getElementById("phonenumber");
 const formBtn = document.getElementById("form-btn");
 
 function submitPersonForm() {
-  if (
-    firstName.value != "" &&
-    lastName.value != "" &&
-    eMail.value != "" &&
-    phoneNumber.value != NaN &&
-    phoneNumber.value != ""
-  ) {
+  if (firstName.value != "" && lastName.value != "" && eMail.value != "") {
     const person = {
       firstName: firstName.value,
       lastName: lastName.value,
       eMail: eMail.value,
-      phone: phoneNumber.value,
     };
     console.log(person);
   }
