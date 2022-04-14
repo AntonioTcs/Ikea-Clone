@@ -88,6 +88,9 @@ function submitPersonForm() {
       eMail: eMail.value,
     };
     console.log(person);
+    firstName.value = "";
+    lastName.value = "";
+    eMail.value = "";
   }
 }
 

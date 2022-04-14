@@ -174,7 +174,11 @@ nav {
         align-items: center;
         width: 230px;
       }
-
+      &:first-child {
+        svg {
+          width: 35px;
+        }
+      }
       .btn-link:hover {
         text-decoration: underline;
         cursor: pointer;
