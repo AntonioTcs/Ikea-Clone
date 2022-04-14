@@ -630,6 +630,10 @@ nav {
   background-color: #494949;
 }
 
+.offers-animated-cnt .img-box img {
+  width: 100%;
+}
+
 .offers-animated-cnt {
   margin: 50px auto;
   margin-left: 10rem;

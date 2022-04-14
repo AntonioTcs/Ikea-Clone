@@ -320,7 +320,7 @@ nav {
       display: flex;
       padding: 6px;
       border-radius: 50%;
-      img{
+      img {
         width: 24px;
       }
     }
@@ -498,7 +498,9 @@ nav {
     }
   }
 }
-
+.offers-animated-cnt .img-box img {
+  width: 100%;
+}
 .offers-animated-cnt {
   margin: 50px auto;
   margin-left: $element-margin;
