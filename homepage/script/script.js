@@ -60,7 +60,6 @@ window.onload = () => {
 
   buttonForm.addEventListener("click", (event) => {
     event.preventDefault();
-
     function capitalizeFirstLetter(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
